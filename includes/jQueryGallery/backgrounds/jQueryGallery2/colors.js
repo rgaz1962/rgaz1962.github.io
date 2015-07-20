@@ -1,0 +1,1 @@
+{"caption":"#ffffff","progressbar":"#261e23","main_button_up":"#cee319","sub_button_over":"#261e23","main_button_over":"#bacd15","sub_button_up":"#261e23","caption_back":"#090006","progressbar_over":"#cee319","controls_back":"#251e23"}

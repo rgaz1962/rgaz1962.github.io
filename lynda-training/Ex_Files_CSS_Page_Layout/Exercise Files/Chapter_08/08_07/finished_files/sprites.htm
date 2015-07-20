@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS Sprites</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: #ccc;
+}
+body {
+	width: 800px;
+	background: #fff;
+	margin: 2em auto 2em;
+	font: 100% Arial, Helvetica, sans-serif;
+	padding: 25px;
+}
+a {
+	text-decoration: none;
+	color: rgb(158,79,25);
+}
+a:hover {
+	color: rgb(199,113,25);
+}
+.clear {
+	clear: both;
+}
+section ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 200px;
+}
+section li {
+	margin: 0 0 1px 0;
+	padding: 0;
+}
+section a {
+	display: block;
+	padding: 5px 35px;
+	line-height: 30px;;
+	text-transform: uppercase;
+	color: #333;
+	background: rgb(237,226,197) url(_images/icon_sprites_25.png) no-repeat 5px 7px;
+}
+.gallery {
+	background-position: 5px 7px;
+}
+.gear {
+	background-position: 5px -93px;
+}
+.contact {
+	background-position: 5px -193px;
+}
+.shop {
+	background-position: 5px -293px;
+}
+</style>
+</head>
+<body>
+<h1>CSS Sprites</h1>
+<p>By combining multiple icons, interface components, or smaller images into a single file, we can limit the number of requests we make to the server. To display different images, the same <strong>background-image</strong> is used and the appropriate values are supplied to the <strong>background-position</strong> property to display the desired graphic. The element's dimensions are set to a size that allows the proper icon to display, but hides the remainder of the sprite.</p>
+<section>
+<ul>
+<li><a href="galleries.htm" class="gallery">Galleries</a></li>
+<li><a href="gear.htm" class="gear">Gear</a></li>
+<li><a href="contact.htm" class="contact">Contact</a></li>
+<li><a href="shop.htm" class="shop">Shop</a></li>
+</ul>
+</section>
+</body>
+</html>

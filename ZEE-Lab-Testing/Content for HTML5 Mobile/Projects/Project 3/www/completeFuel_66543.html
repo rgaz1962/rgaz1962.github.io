@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Find Fuel</title>
+        <link type="text/css" rel="stylesheet" media="screen" href="jqtouch/jqtouch.css">
+        <link type="text/css" rel="stylesheet" media="screen" href="themes/jqt/theme.css">
+        <script type="text/javascript" src="jqtouch/jquery.js"></script>
+        <script type="text/javascript" src="jqtouch/jqtouch.js"></script>
+        <script type="text/javascript">
+            var jQT = $.jQTouch({
+                icon: 'logo.png',
+                statusBar: 'black'
+            });
+
+        </script>
+		<script type="text/javascript">
+		function show_confirm()
+		{
+		var r=confirm("Your fuel is reserved. Will you need directions to the fuel station? ");
+		if (r==true)
+		  {
+		  window.open("directions.html", "_webapp");
+		  }
+		else
+		  {
+		  //alert("You pressed Cancel!");
+		  }
+		}
+		</script>
+<link rel="stylesheet" href="css/buttonStyles.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+    </head>
+<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);"></body>       
+
+        <div id="FindFuel">
+            <div class="toolbar">
+                <h1>Reservation</h1>
+                <a class="button back" href="index.html" target="_webapp">Back</a>
+            </div>
+            <div>
+
+						<ul class="rounded">
+
+							
+
+											<button class="large yellow awesome" style="margin-left:auto;margin-right:auto;">
+
+							              <h1>	<a href="tel:5555555555">Call Station #66543</a></h1>
+							</button>
+							<p>&nbsp;</p>
+
+			              	<p><span style="color: #FFF;">
+				Time to station: 12 mins<br>
+				Fuel Reserve At Station: 45 liters	<br>
+				How much to reserve:
+				 <form method="post">
+		                <ul class="rounded">
+		                    <select name="fuel" style="width:100%;">
+							<option value="volvo">10 liters</option>
+							<option value="saab">15 liters</option>
+							<option value="fiat">20 liters</option>
+							<option value="audi">25 liters</option>
+							</select>
+		                    <li><input type="submit" class="submit" name="action" value="Reserve Fuel" onclick="show_confirm()" /></li>
+		                </ul>
+		            </form>
+				</span></p>	
+			            </ul>
+
+
+            </div>
+        </div>
+
+
+       
+        
+		
+    </body>
+</html>

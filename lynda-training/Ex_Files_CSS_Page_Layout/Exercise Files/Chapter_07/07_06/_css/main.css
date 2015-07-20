@@ -1,0 +1,1008 @@
+@charset "UTF-8";
+
+/*Lab steps
+
+1. In the index.htm file, use a meta viewport tag to force mobile devices to set the viewport width to the actual device width and set the initial scale to 100%.
+2. On line 292 finish the mobile device media query to restrict styles to screen devices with a screen width below 481px.
+3. On line 512 finish the tablet media query to constrain styles to screen devices with a screen width between 481px and 768px.
+4. On line 748 finish the desktop media query to restrict styles to screen devices with a screen width above 768px.
+5. On line 465 (mobile styles), and line 695 (tablet styles) write a selector that hides the sidebar archive galleries menu.
+6. On line 965 (desktop styles) write a selector the hides the select pulldown in the aside.
+7. Starting on line 430 (mobile styles) and on line 658 (tablet styles) line replace the large city preview images with the small images. Look in the "_image" directory and identify the smaller banner images. They are named "sm_cityname_banner.jpg" instead of "cityname_banner.jpg."
+*/
+
+
+/* CSS Document */
+
+/*copyright lynda.com 2011
+feel free to use these styles as you wish
+attribution would be nice, but not required
+*/
+
+/* desolve color palette
+#4C4341     rgb(76, 67, 65)  ASH
+#646266      rgb(100, 98, 102)  DULL GRAY
+#7B798F     rgb(123, 121, 143)  PEWTER BLUE
+#ADA982    rgb(173, 169, 130)  DARK TAN
+#D8D5BC   rgb(216, 213, 188)  MED TAN
+#EDE4D6   rgb(237, 228, 214)  LIGHT TAN
+#667F6A     rgb(102, 127, 106)  DARK GREEN
+*/
+/*Fonts*/
+@font-face {
+	font-family: 'Cantarell';
+	src: url('../_fonts/Cantarell-Regular-webfont.eot');
+	src: url('../_fonts/Cantarell-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/Cantarell-Regular-webfont.woff') format('woff'), url('../_fonts/Cantarell-Regular-webfont.ttf') format('truetype'), url('../_fonts/Cantarell-Regular-webfont.svg#webfont9UOzsjXz') format('svg');
+	font-weight: normal;
+	font-style:normal;
+}
+
+@font-face {
+	font-family: 'Cantarell';
+	src: url('../_fonts/Cantarell-Oblique-webfont.eot');
+	src: url('../_fonts/Cantarell-Oblique-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/Cantarell-Oblique-webfont.woff') format('woff'), url('../_fonts/Cantarell-Oblique-webfont.ttf') format('truetype'), url('../_fonts/Cantarell-Oblique-webfont.svg#webfontRl4nowrT') format('svg');
+	font-weight: normal;
+	font-style:italic;
+}
+
+@font-face {
+	font-family: 'Cantarell';
+	src: url('../_fonts/Cantarell-Bold-webfont.eot');
+	src: url('../_fonts/Cantarell-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/Cantarell-Bold-webfont.woff') format('woff'), url('../_fonts/Cantarell-Bold-webfont.ttf') format('truetype'), url('../_fonts/Cantarell-Bold-webfont.svg#webfontKr2CkGZp') format('svg');
+	font-weight: bold;
+	font-style:normal;
+}
+
+@font-face {
+	font-family: 'Cantarell';
+	src: url('../_fonts/Cantarell-BoldOblique-webfont.eot');
+	src: url('../_fonts/Cantarell-BoldOblique-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/Cantarell-BoldOblique-webfont.woff') format('woff'), url('../_fonts/Cantarell-BoldOblique-webfont.ttf') format('truetype'), url('../_fonts/Cantarell-BoldOblique-webfont.svg#webfontQ1aSR0ux') format('svg');
+	font-weight: bold;
+	font-style:italic;
+}
+
+@font-face {
+	font-family: "Cardo";
+	src: url("../_fonts/Cardo99s-webfont.eot");
+	src: url("../_fonts/Cardo99s-webfont.eot?#iefix") format("embedded-opentype"), url("../_fonts/Cardo99s-webfont.woff") format("woff"), url("../_fonts/Cardo99s-webfont.ttf") format("truetype"), url("../_fonts/Cardo99s-webfont.svg#webfontQ5EXXZTZ") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OstrichSansBold';
+	src: url('../_fonts/ostrich-bold-webfont.eot');
+	src: url('../_fonts/ostrich-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/ostrich-bold-webfont.woff') format('woff'), url('../_fonts/ostrich-bold-webfont.ttf') format('truetype'), url('../_fonts/ostrich-bold-webfont.svg#OstrichSansBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*Global styles -----------------------------------------------------------------------------------------------------------*/
+
+/*limited reset*/
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align:baseline;
+	font: inherit;
+}
+
+/*html5 display rule*/
+address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
+	display: block;
+}
+
+a {
+	text-decoration: none;
+	color: #667F6A;
+	border-bottom: 1px dotted #667F6A;
+}
+
+a:hover {
+	color: #7B798F;
+	border-bottom: 1px solid #7B798F;
+}
+
+.preview a {
+	display: block;
+	height:100%;
+}
+
+.preview a:hover {
+	border: none;
+}
+
+a.phone {
+	border: none;
+	color: inherit;
+}
+
+a.phone:hover {
+	border: none;
+	color: inherit;
+	cursor: default;
+}
+
+html {
+	background: rgb(123, 121, 143);
+}
+
+body {
+	font: 100% Cantarell, Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+	position: relative;
+	background: #fff;
+	color: rgb(76, 67, 65);
+	font-weight:normal;
+	font-style:normal;
+}
+
+#mainNav h2 {
+	display: none;
+}
+
+nav ul {
+	list-style: none;
+}
+
+/*header styles*/
+header {
+	background: rgb(100, 98, 102);
+	width: 100%;
+	padding-top: 1px;
+	overflow: hidden;
+	margin-bottom: 1.5em;
+}
+
+header h1 {
+	color: #fff;
+	font-weight: bold;
+	background: url(../_images/desolve_logo.png) no-repeat left center;
+	text-transform: uppercase;
+}
+
+/*nav styles*/
+#mainNav {
+	overflow: hidden;
+	margin-bottom: 1.5em;
+}
+
+#mainNav li {
+	float: left;
+}
+
+#mainNav a {
+	text-transform: uppercase;
+	display: block;
+	color: rgb(76, 67, 65);
+	border: none;
+}
+
+#mainNav a:hover {
+	color: rgb(123, 121, 143);
+}
+
+#mainNav a.current {
+	color: rgb(123, 121, 143);
+	cursor: default;
+}
+
+/*banner styles*/
+.banner h1 {
+	text-transform: uppercase;
+}
+
+/*article styles*/
+article section {
+	border-bottom: 2px solid rgb(76, 67, 65);
+	margin-bottom: 2em;
+}
+
+article h1 {
+	font: 1.8em Cardo, Georgia, serif;
+	border-bottom: 2px solid rgb(76, 67, 65);
+	margin-bottom: 1.5em;
+}
+
+article h2 a {
+	color: rgb(76, 67, 65);
+	border: none;
+}
+
+article h2 a:hover {
+	color: rgb(123, 121, 143);
+	border: none;
+}
+
+.preview a, .preview a:hover {
+	display: block;
+	border: none;
+}
+
+/*form styles*/
+label {
+	display:block;
+	font-size: 1em;
+	margin: .8em 0 0;
+}
+.inline {
+	display: inline;
+}
+
+
+/*aside styles*/
+aside h2 {
+	font-family: Cardo, Georgia, serif;
+}
+
+.enter a {
+	border: 1px solid #999;
+	margin: 1em 0 1.5em;
+	color: rgb(76, 67, 65);
+	width: 5em;
+	height: 1.4em;
+	line-height: 1.4em;
+	text-align: center;
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	background: rgb(226,226,226);
+	background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(50%, rgba(219,219,219,1)), color-stop(51%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%); /* W3C */
+}
+
+.enter a:hover {
+	background: rgb(254,254,254); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 49%, rgba(219,219,219,1) 50%, rgba(226,226,226,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(254,254,254,1)), color-stop(49%, rgba(209,209,209,1)), color-stop(50%, rgba(219,219,219,1)), color-stop(100%, rgba(226,226,226,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 49%, rgba(219,219,219,1) 50%, rgba(226,226,226,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 49%, rgba(219,219,219,1) 50%, rgba(226,226,226,1) 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 49%, rgba(219,219,219,1) 50%, rgba(226,226,226,1) 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e2e2e2', GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 49%, rgba(219,219,219,1) 50%, rgba(226,226,226,1) 100%); /* W3C */
+}
+
+/*footer styles*/
+#pageFooter {
+	background: rgb(173, 169, 130);
+	padding-top: 1.5em;
+}
+
+#pageFooter input[type="search"] {
+	width: 200px;
+}
+
+#pageFooter label {
+	display: block;
+	font-size: 1.2em;
+	text-transform:uppercase;
+}
+
+#pageFooter a {
+	display:block;
+	height: 100px;
+	line-height: 100px;
+	border: none;
+	color:rgb(76, 67, 65);
+	padding-left: 95px;
+	background: url(../_images/tweet_90.png) no-repeat;
+}
+
+/*mobile styles*/
+@media  {
+
+/*disable text sizing on orientation change*/
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
+	-webkit-text-size-adjust:none;
+}
+
+body {
+	width: 90%;
+	margin: 0 auto;
+	min-width: 320px;
+	max-width: 480px;
+}
+
+/*header styles*/
+header {
+	height: 70px;
+}
+
+header h1 {
+	font-size: 2em;
+	padding-left: 55px;
+	line-height: 70px;
+	width: 190px;
+	margin: 0 auto;
+	background: url(../_images/desolve_logo_50.png) no-repeat left center;
+}
+
+header h2 {
+	display: none;
+}
+
+/*nav styles*/
+#mainNav {
+	width: 300px;
+	margin: 0 auto;
+	margin-bottom: 3em;
+}
+
+#mainNav li {
+	margin-right: 5%;
+}
+
+#mainNav li:last-child {
+	margin-right: 0;
+}
+
+#mainNav a {
+	font-size: .9em;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+#mainNav a em {
+	display: none;
+}
+
+a.gallery {
+	background: url(../_images/icon_sprites_50.png) no-repeat center 25px;
+}
+
+a.gear {
+	background: url(../_images/icon_sprites_50.png) no-repeat center -175px;
+}
+
+a.interact {
+	background: url(../_images/icon_sprites_50.png) no-repeat center -375px;
+}
+
+a.shop {
+	background: url(../_images/icon_sprites_50.png) no-repeat center -578px;
+}
+
+/*banner styles*/
+.banner {
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 2.4em;
+}
+
+.banner h1 {
+	font-weight: bold;
+	font-size: 1em;
+	text-align: center;
+	margin-bottom: .5em;
+}
+
+.banner p {
+	width: 90%;
+	font-size: .8em;
+	margin: 0 auto;
+	line-height: 2;
+}
+
+/* article styles */
+article {
+	width: 90%;
+	margin: 0 auto;
+}
+
+article section {
+	border-bottom: 2px solid rgb(76, 67, 65);
+	margin-bottom: 1.6em;
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 20px;
+}
+
+article h1 {
+	background: url(../_images/icon_sprites_50.png) no-repeat right top;
+	padding: 20px 0 5px;
+}
+
+article h2 {
+	font: 2em Cardo, Georgia, serif;
+	margin-bottom: 0;
+}
+
+.caption {
+	font-size: .8em;
+	margin-top: 1em;
+}
+
+article p.pubdate {
+	font-size: 1em;
+	text-transform: uppercase;
+	margin-bottom: 1em;
+}
+
+article .preview {
+	height: 175px;
+}
+
+.philly .preview {
+	background: url(../_images/philly_banner.jpg) no-repeat;
+}
+
+.chicago .preview {
+	background: url(../_images/chicago_banner.jpg) no-repeat;
+}
+
+.nyc .preview {
+	background: url(../_images/nyc_banner.jpg) no-repeat;
+}
+
+/*aside styles*/
+aside {
+	width: 90%;
+	margin: 0 auto;
+}
+
+aside section {
+	clear: both;
+}
+
+aside h2 {
+	font-size: 1.6em;
+	margin: 1em 0 .8em;
+	padding-top: .8em;
+	border-top: 2px solid rgb(76, 67, 65);
+	text-align:center;
+}
+
+aside nav h2 {
+	border: none;
+	padding-top: 0;
+}
+
+aside nav {
+	margin-bottom: 2em;
+}
+/*disable sidebar archive menu*/
+
+
+nav select {
+	width: 200px;
+	margin-left: 20%;
+}
+
+.contest img {
+	display: block;
+	margin: 0 auto .8em;
+}
+
+.contest p {
+	font-size: .9em;
+	margin: 0 auto;
+	margin-bottom: 1.5em;
+	width: 80%;
+	line-height: 1.5;
+}
+
+.enter a {
+	display: block;
+}
+
+/*footer styles*/
+#pageFooter {
+	clear:both;
+	overflow:hidden;
+	padding-bottom: 2em;
+}
+
+#pageFooter form {
+	width: 90%;
+	margin: 0 auto 1em;
+}
+
+.notice {
+	width: 300px;
+}
+
+#pageFooter p {
+	margin-left: 5%;
+}
+}
+
+/*tablet styles*/
+@media {
+
+body {
+	width: 90%;
+	margin: 0 auto;
+	min-width: 500px;
+	max-width: 768px;
+}
+
+/*header styles*/
+header {
+	height: 165px;
+}
+
+header h1 {
+	font-size: 3.2em;
+	padding-left: 110px;
+	line-height: 165px;
+	width: 270px;
+	margin: 0 auto;
+}
+
+header h2 {
+	display: none;
+}
+
+/*nav styles*/
+#mainNav {
+	width: 450px;
+	margin: 0 auto;
+}
+
+#mainNav li {
+	margin-right: 10%;
+}
+
+#mainNav li:last-child {
+	margin-right: 0;
+}
+
+#mainNav a {
+	font-size: 1.2em;
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+#mainNav a em {
+	display: none;
+}
+
+a.gallery {
+	background: url(../_images/icon_sprites_25.png) no-repeat center 30px;
+}
+
+a.gear {
+	background: url(../_images/icon_sprites_25.png) no-repeat center -69px;
+}
+
+a.interact {
+	background: url(../_images/icon_sprites_25.png) no-repeat center -170px;
+}
+
+a.shop {
+	background: url(../_images/icon_sprites_25.png) no-repeat center -270px;
+}
+
+/*banner styles*/
+.banner {
+	padding-left: 3.9%;
+	overflow: hidden;
+	background: url(../_images/sm_skyline.jpg) no-repeat;
+	margin-bottom: 3em;
+	position: relative;
+}
+
+.banner h1 {
+	font-weight: bold;
+	font-size: 120%;
+	color: #fff;
+	letter-spacing:.1em;
+	text-align: center;
+	margin-top: 1em;
+}
+
+.banner p {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 220px;
+}
+
+/* article styles */
+article {
+	width: 92.2%;
+	padding: 0 3.9%;
+}
+
+article section {
+	border-bottom: 2px solid rgb(76, 67, 65);
+	margin-bottom: 1.6em;
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 1.6em;
+}
+
+article h1 {
+	background: url(../_images/icon_sprites_50.png) no-repeat right top;
+	padding: 20px 0 5px;
+}
+
+article h2 {
+	font: 2.4em Cardo, Georgia, serif;
+	float: left;
+	clear: left;
+	margin-bottom: 0;
+	width: 40%;
+}
+
+article p {
+	font-size: 1em;
+	margin: 0;
+	float: left;
+	clear: left;
+	width: 40%
+}
+
+article p.pubdate {
+	font-size: 1em;
+	text-transform: uppercase;
+	float: left;
+	clear: left;
+	margin: 0 0 4em;
+	width: 40%;
+}
+
+article .preview {
+	height: 175px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 55%;
+}
+
+.philly .preview {
+	background: url(../_images/philly_banner.jpg) no-repeat;
+}
+
+.chicago .preview {
+	background: url(../_images/chicago_banner.jpg) no-repeat;
+}
+
+.nyc .preview {
+	background: url(../_images/nyc_banner.jpg) no-repeat;
+}
+
+/*aside styles*/
+aside {
+	width: 92.2%;
+	padding: 0 3.9%;
+}
+
+aside section {
+	clear: both;
+}
+
+aside h2 {
+	font-size: 1.2em;
+	margin-bottom: 1em;
+	border-top: 2px solid rgb(76, 67, 65);
+	padding-top: .8em;
+}
+
+aside nav h2 {
+	float: left;
+	margin-right: 1em;
+	font-size: 1.6em;
+	border: none;
+	padding-top: 0;
+}
+
+aside nav {
+	margin-bottom: 2em;
+}
+
+/*disable sidebar archive menu*/
+
+
+nav select {
+	float: left;
+	margin-top: 1em;
+	width: 200px;
+}
+
+.contest img {
+	float: left;
+	margin-bottom: 1em;
+	margin-right: 1em;
+}
+
+.contest p {
+	font-size: .9em;
+	margin-bottom: 1.5em;
+	width: 85%;
+	line-height: 2;
+}
+
+.enter a {
+	clear: both;
+	display: block;
+}
+
+/*footer styles*/
+#pageFooter {
+	clear:both;
+	overflow:hidden;
+	height: 150px;
+}
+
+#pageFooter form {
+	float: left;
+	margin-left: 3.9%;
+	display: inline;
+}
+
+.notice {
+	width: 300px;
+}
+
+#pageFooter p {
+	float: right;
+	clear: right;
+	margin-right: 3.9%;
+	text-align: right;
+}
+}
+/*desktop styles*/
+@media {
+
+body {
+	width: 90%;
+	margin: 0 auto;
+	min-width: 1024px;
+	max-width: 1280px;
+}
+
+#pageFooter label {
+	display: block;
+	font-size: 1.2em;
+	text-transform:uppercase;
+}
+
+#pageFooter a {
+	display:block;
+	height: 100px;
+	line-height: 100px;
+	border: none;
+	color:rgb(76, 67, 65);
+	padding-left: 95px;
+	background: url(../_images/tweet_90.png) no-repeat;
+}
+
+/*header styles*/
+header {
+	height: 165px;
+}
+
+header h1 {
+	font-size: 3.2em;
+	padding-left: 110px;
+	line-height: 100px;
+	line-height: 165px;
+	margin-right: .5em;
+	float: left;
+	margin-left: 3.9%;/* fixes nasty 1px header fitting problem*/
+	display: inline;
+}
+
+header h2 {
+	font-family: Cantarell, Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-weight:normal;
+	font-size: 1.4em;
+	color: #fff;
+	float: left;
+	text-transform: lowercase;
+	letter-spacing:.1em;
+	line-height: 165px;
+}
+
+/*nav styles*/
+#mainNav {
+	padding-left: 3.9%;
+}
+
+#mainNav li {
+	margin-right: 3.6em;
+}
+
+#mainNav a {
+	font-size: 1.2em;
+	text-align: center;
+	padding-left: 15px;
+}
+
+#mainNav a em {
+	color: rgb(76, 67, 65);
+}
+
+#mainNav em {
+	font-size: .8em;
+	display: block;
+	text-transform: lowercase;
+}
+
+a.gallery {
+	background: url(../_images/icon_sprites_25.png) no-repeat 0 3px;
+}
+
+a.gear {
+	background: url(../_images/icon_sprites_25.png) no-repeat 38px -98px;
+}
+
+a.interact {
+	background: url(../_images/icon_sprites_25.png) no-repeat 62px -197px;
+}
+
+a.shop {
+	background: url(../_images/icon_sprites_25.png) no-repeat 6px -297px;
+}
+
+/*banner styles*/
+.banner {
+	height: 350px;
+	padding-left: 3.9%;
+	overflow: hidden;
+	background: url(../_images/gallery_banner.jpg) no-repeat;
+	margin-bottom: 4em;
+	position: relative;
+}
+
+.banner h1 {
+	font-size: 2.2em;
+	color: #fff;
+	padding-top: 290px;
+	letter-spacing:.1em;
+}
+
+.banner p {
+	width: 21%;
+	padding: 1% 1% 0;
+	height: 350px;
+	font-size: 1em;
+	color: #fff;
+	background: rgba(123, 121, 143, .8);
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/* article styles */
+article {
+	float: left;
+	width: 70.1%;
+	padding-left:3.9%;
+}
+
+article section {
+	border-bottom: 2px solid rgb(76, 67, 65);
+	margin-bottom: 2em;
+}
+
+article h1 {
+	background: url(../_images/icon_sprites_50.png) no-repeat right top;
+	padding: 20px 0 5px;
+}
+
+article h2 {
+	font: 2.8em Cardo, Georgia, serif;
+	float: left;
+	margin-bottom: .1em;
+}
+
+article p {
+	font-size:1.2em;
+	margin: .8em 0;
+}
+
+article p.pubdate {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	float: right;
+	padding-top: .8em;
+	margin:0;
+}
+
+article .preview {
+	height: 250px;
+	clear:both;
+}
+
+.philly .preview {
+	background: url(../_images/philly_banner.jpg) no-repeat;
+}
+
+.chicago .preview {
+	background: url(../_images/chicago_banner.jpg) no-repeat;
+}
+
+.nyc .preview {
+	background: url(../_images/nyc_banner.jpg) no-repeat;
+}
+
+/*aside styles*/
+aside {
+	float: right;
+	width: 19.1%;
+	padding-right: 3.9%;
+}
+
+aside h2 {
+	font-size: 1.2em;
+	text-align: center;
+	margin-bottom: 1em;
+	clear: both;
+}
+
+aside nav {
+	margin-bottom: 2em;
+}
+
+aside nav a {
+	display:block;
+	padding-left: 16px;
+	border: none;
+	color: rgb(76, 67, 65);
+	line-height: 2em;
+	margin-bottom: 1px;
+}
+
+aside nav li {
+	background: rgb(216, 213, 188);
+}
+
+aside nav li:nth-child(even) {
+	background: rgb(237, 228, 214);
+}
+
+aside nav a:hover {
+	color: #fff;
+	border:none;
+	background: rgb(100, 98, 102);
+}
+
+/*disable select menu*/
+
+.contest img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 1em;
+}
+
+.contest p {
+	font-size: .9em;
+	margin: 0 auto 1.5em;
+}
+
+.enter a {
+	float: right;
+}
+
+/*footer styles*/
+#pageFooter {
+	clear:both;
+	overflow:hidden;
+	height: 150px;
+}
+
+#pageFooter form {
+	float: left;
+	margin-left: 3.9%;
+	display: inline;
+}
+
+.notice {
+	width: 300px;
+}
+
+#pageFooter p {
+	float: right;
+	clear: right;
+	margin-right: 3.9%;
+	text-align: right;
+}
+}

@@ -1,0 +1,396 @@
+/* The overall elements style */
+
+body {
+	font-family: Arial, sans-serif;
+	color: #333;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header.page {
+
+  color: #bfbfbf;
+  margin-bottom: 30px;
+  
+  padding-top: 1px;
+  margin-top: -1px;
+
+    background-color: #515151; /* Old browsers */
+    background-image: -moz-linear-gradient(top, #515151 0%, #0d0d0d 100%); /* FF3.6+ */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#515151), color-stop(100%,#0d0d0d)); /* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(top, #515151 0%,#0d0d0d 100%); /* Chrome10+,Safari5.1+ */
+    background-image: -o-linear-gradient(top, #515151 0%,#0d0d0d 100%); /* Opera 11.10+ */
+    background-image: -ms-linear-gradient(top, #515151 0%,#0d0d0d 100%); /* IE10+ */
+    background-image: linear-gradient(top, #515151 0%,#0d0d0d 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#515151', endColorstr='#0d0d0d',GradientType=0 ); /* IE6-9 */ 
+
+}
+
+a:link, a:visited {
+	color: #0066BC;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0066BC;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+.quote {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-style: italic;
+  line-height: normal;
+  padding-left: 20px;
+}
+
+.clear {
+  clear: both;
+}
+
+label.error {
+  color: red;
+  font-weight: normal;
+  width: auto;
+}
+
+/* ----------------------- SLATS ----------------------- */
+
+ol.slats {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    }
+
+ol.slats li {
+	margin: 0 0 10px 0;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid #ddd;
+	}
+
+ol.slats li:last-child {
+	margin: 0;
+	padding: 0;
+	border-bottom: none;
+	}
+
+ol.slats li h3 {
+	font-size: 16px;
+    line-height: normal;
+    font-weight: bold;
+    margin: 0px;
+	}
+
+ol.slats li p {
+    margin: 0px;
+	}
+
+ol.slats li p span.meta {
+	display: block;
+	font-size: 12px;
+	color: #666;
+	}
+
+/* ----------------------- FORM ----------------------- */
+
+form fieldset {
+	margin: 0 0 10px 0;
+	padding: 0 0 10px 0;
+	font-size: 14px;
+	border-bottom: 1px solid #ddd;
+	}
+form fieldset.form-actions {
+	margin: 0 0 0 20%;
+	padding: 0;
+	border: none;
+	}
+form fieldset.check {
+	padding-left: 20%;	
+	}
+form fieldset label {
+	float: left;
+	width: 20%;
+	margin: 4px 0 5px 0;
+	font-weight: bold;
+	}
+form fieldset.check label {
+	display: inline;
+	float: none;
+	width: auto;
+	font-weight: normal;
+	}
+form fieldset.radio ul li label {
+	display: inline;
+	float: none;
+	width: auto;
+	font-weight: normal;
+	}
+form fieldset input.form-text,
+form fieldset textarea {
+	display: block;
+	width: 75%;
+	padding: 5px;
+	font-size: 14px;
+	border: 1px solid #ddd;
+	background: #f5f5f5;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	}
+form fieldset input.form-text:focus {
+	border: 1px solid #ccc;
+	background: #fff;
+	}
+form fieldset textarea {
+	height: 150px;
+	}
+form fieldset select {
+	min-width: 25%;
+	margin: 0;
+	}
+form fieldset.radio ul {
+	margin: 5px 0 0 20%;
+	}
+form fieldset.radio ul li {
+	margin: 0 0 5px 0;
+	}
+form fieldset.radio ul li:last-child {
+	margin: 0;
+	}
+form fieldset p.form-help {
+	margin: 5px 0 0 20%;
+	font-size: 12px;
+	color: #999;
+	}
+form input[type="submit"] {
+	margin: 0;
+	padding: 5px 10px;
+	font-size: 12px;	
+	font-weight: bold;
+	border: 1px solid #ccc;
+	background: #eee;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	}
+form input[type="submit"]:hover,
+form input[type="submit"]:focus {
+	border: 1px solid #bbb;
+	background: #e5e5e5;
+	}
+form input[type="submit"]:active {
+	border: 1px solid #ccc;
+	background: #eee;
+	}
+@media screen and (max-width: 600px) {
+	form fieldset label {
+		display: block;
+		float: none;
+		width: auto;
+		margin: 0 0 5px 0;
+		}
+	form fieldset.form-actions,
+	form fieldset.check,
+	form fieldset.radio ul,
+	form fieldset p.form-help {
+		margin-left: 0;
+		padding-left: 0;
+		}
+	form fieldset input.form-text,
+	form fieldset textarea {
+		width: 100%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		}
+	}
+
+/* ----------------------- HEADER CSS ------------------------------ */
+ 
+
+
+.logo h3 {
+    font-family: "Myriad Pro", "Myriad-Pro", "myriad-pro", Helvetica, Arial, sans-serif; 
+	position: relative;
+	margin:0;
+	padding:0;
+    float: left;
+}
+
+.logo h3 a {
+  display: block;
+  padding: 10px 5px 10px 0px;
+  color: #ffffff;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.menu
+{
+  float: right;
+}
+
+.menu ul {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  list-style: none;
+}
+
+.menu ul li {
+  float: left;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 6px 10px 4px;
+  margin: 13px 5px;
+  font-size: 14px;
+  font-weight:bold;
+  text-decoration: none;
+  color: #BFBFBF;
+}
+
+.menu ul li a:hover {
+    color: #fff;
+}
+
+.menu ul > li.selected a {
+  background-color: white;
+  color: black;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.menu.dropdown > ul > li > a {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.menu.dropdown ul li ul {
+  display: none;
+  position: absolute;
+  right:-10px;
+  width: 320px;
+
+  background: rgba(5,5,5,1);
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
+  
+  -webkit-box-shadow:  0px 3px 4px 2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow:  0px 3px 4px 2px rgba(0, 0, 0, 0.4);
+  box-shadow:  0px 3px 4px 2px rgba(0, 0, 0, 0.4);
+        
+           
+}
+
+.menu.dropdown ul li ul li {
+  float: none;
+}
+
+.menu.dropdown {
+  display: none;
+}
+
+/* ----------------------- FOOTER CSS ------------------------------ */
+
+/* Footer copyright text CSS */
+
+footer {
+	padding-top: 15px !important;
+	font-size: 14px;
+	border-top: 1px solid #ddd;
+    margin-top: 20px !important;
+	}
+
+footer ul {
+    margin-bottom: 0px;
+    }
+
+footer nav ul li {
+	display: inline;
+	margin: 0 10px 0 0;
+	padding: 0 10px 0 0;
+	font-weight: bold;
+	border-right: 1px solid #ddd;
+	}
+
+footer nav ul li:last-child {
+	margin: 0;
+	padding: 0;
+	border: none;
+	}
+
+footer p {
+	margin: 10px 0;
+	}							
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+    }
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+      #slider{
+        max-width: 748px;
+        max-height: 100%;
+      }
+
+      .menu.full {
+        display: none;
+      }
+      
+      .menu.dropdown {
+        display: block;
+      }
+  
+    }
+    /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+      
+      .menu.dropdown ul li ul {
+        right: -10px;
+        width: 440px;
+      }
+    }
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+      #slider{
+        display: none;
+      }
+    }

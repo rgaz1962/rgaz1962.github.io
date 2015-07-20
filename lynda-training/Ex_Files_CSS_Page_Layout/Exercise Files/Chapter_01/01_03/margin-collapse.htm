@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>vertical margin collapse</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+ div, p {
+	margin: 0;
+	padding:0;
+}
+html {
+	background: url(images/grid.gif) 5px 5px;
+}
+body {
+	width: 600px;
+	margin: 0 auto;
+	font: 100% Arial, Arial, Helvetica, sans-serif;
+}
+h1 {
+	margin:1em 0;
+}
+/*add styles here*/
+p {
+	background: rgba(237,226,197,.8);
+	line-height:20px;
+}
+div {
+	background: rgba(109,154,197,.8);
+}
+</style>
+</head>
+<body>
+<article>
+<h1>Vertical margin collapse</h1>
+<p>When two block-level elements are stacked on top of one another in normal document flow, their margins collapse. If the top and bottom margins of the two elements are equal in value, that value is used. If not, the greater of the two values is used to define the space between the elements.</p>
+<p>This prevents paragraphs, headings, and other typographic elements from having "double-spacing" between the elements. It can, however, have unintended consequences for your layouts if you're not careful as the vertical margins of <em>all</em> elements collapse, not just textual elements.</p>
+<div>
+<p>This can be particularily tricky when you consider parent and child elements. Without something to keep the margins from touching (such as padding or a border), those margins collapse as well.</p>
+</div>
+<div>
+<p>This means that if you set a top margin on a heading or paragraph inside a container element to hold it away from the top edge of the container, you're not guarenteed that you'll get the results you're after unless you account for margin collapse.</p>
+</div>
+</body>
+</html>

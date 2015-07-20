@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>styling image links</title>
+<style>
+html {
+	background: #E6E3D4;
+}
+body {
+	font: 100% Georgia, "Times New Roman", Times, serif;
+	line-height: 1.4;
+	width: 70%;
+	margin: 0 auto;
+}
+h1, h2, h3 {
+	font-size: 2.4em;
+	font-weight: normal;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+	color: #575451;
+}
+h2 {
+	font-size: 1.4em;
+}
+ul {
+	list-style: none;
+}
+li {
+	margin-bottom: 1em;
+}
+a {
+	color: #916226;
+	text-decoration: none;
+}
+a:hover {
+	color: #D5973C;
+	text-decoration: underline;
+}
+.float-left {
+	float: left;
+	margin-right: 1em;
+}
+/*image styles*/
+</style>
+</head>
+<body>
+<h1>Styling image links</h1>
+<p><a href="visit.htm"></a>For the most part, styling image links requires no extra considerations than any normal linked element. Older browsers, such as IE versions 8 and below, would often place a default border around linked images. As a result, most CSS resets contain a selector that set the initial border property of images to none. </p>
+<p><a href="visit.htm"><img src="_images/pottery1.jpg" width="200" height="200" alt="blue vase" class="float-left"></a>However, there will be times you want to visually indicate image links. Usually image links are used to supplement existing links, but in cases like image thumbnails or where the image stands as the only available link you should style the image in a way that allows the user to infer the image is a link.</p>
+<p>If you use background images, you have multiple styling options, including the ability to swap images out during a hover. If you must use an inline image, your stylistic choices are a little more limited. You can modify properties such as borders, padding, background colors, or even width and height to alert users to the image&rsquo;s purpose. Those properties can be further refined with the use of the :hover pseudo-class selector. If you do choose to modify those properties, taking stylistic cues from existing link styling makes it easier to convey the purpose of the image. Keep in mind that unless overridden images are inline, and certain CSS properties can affect layout. Be sure to test image styling thoroughly to make sure it doesn&rsquo;t negatively impact surrounding elements.</p>
+<h2>Thumbnail test</h2>
+<p class="strip"><a href="visit.htm"><img src="_images/thumbnail1.jpg" width="100" height="100" alt="tan bowl" class="thumb"></a> <a href="visit.htm"><img src="_images/thumbnail2.jpg" width="100" height="100" alt="blue vase" class="thumb"></a> <a href="visit.htm"><img src="_images/thumbnail3.jpg" width="100" height="100" alt="tan vase" class="thumb"></a> <a href="visit.htm"><img src="_images/thumbnail4.jpg" width="100" height="100" alt="red pitcher" class="thumb"></a> <a href="visit.htm"><img src="_images/thumbnail5.jpg" width="100" height="100" alt="red bowl" class="thumb"></a> <a href="visit.htm"></p>
+</body>
+</html>

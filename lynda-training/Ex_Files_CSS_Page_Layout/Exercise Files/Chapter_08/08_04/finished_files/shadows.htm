@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>drop shadows</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: #ccc;
+}
+body {
+	width: 700px;
+	background: #fff;
+	margin: 2em auto 2em;
+	font: 100% Arial, Helvetica, sans-serif;
+	padding: 25px;
+}
+a {
+	text-decoration: none;
+	color: rgb(158,79,25);
+}
+a:hover {
+	color: rgb(199,113,25);
+}
+.clear {
+	clear: both;
+}
+pre {
+	font-size: 1.2em;
+	padding: 1em .5em;
+	background: rgb(216,233,204);
+	border-bottom: 2px solid #666;
+}
+section h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.8em;
+	margin-bottom: .5em;
+	font-weight: normal;
+	font-variant: small-caps;
+	letter-spacing: .1em;
+	color: #aaa;
+}
+div {
+	width: 200px;
+	height: 200px;
+	padding: 10px;
+	background: rgb(223,220,202);
+	float: left;
+	margin-right: 50px;
+	margin-bottom: 2em;
+	margin-top: 1em;
+}
+.shadows h2 {
+	text-shadow: 1px 1px 0 #666;
+}
+.outer {
+	-moz-box-shadow: 5px 5px 10px -3px #333;
+	-webkit-box-shadow: 5px 5px 10px -3px #333;
+	box-shadow: 5px 5px 10px -3px #333;
+}
+.inner {
+	-moz-box-shadow: inset 0 0 10px -2px #333;
+	-webkit-box-shadow: inset 0 0 10px -2px #333;
+	box-shadow: inset 0 0 10px -2px #333;
+}
+</style>
+</head>
+<body>
+<h1>Drop Shadows</h1>
+<p>You can apply drop shadows to HTML elements through the <strong>box-shadow</strong> and <strong>text-shadow </strong>properties. The syntax for both shadow properties is roughly the same, except for the fact that text-shadow does not allow the optional <strong>inset</strong> keyword. Older versions of the text specification limited text-shadows to three values (no spread) and is the form of the syntax that is widely used.</p>
+<p>Here is the typical syntax for creating a box-shadow:</p>
+<pre>box-shadow: 5px 5px 5px 10px black;</pre>
+<p>The first value is the horizontal offset, the second value is the vertical offset, the third value is the blur radius, the fourth value is the spread (or size) of the shadow, and the last value is the color. Adding the optional inset keyword to box-shadow will convert the shadow to an inner shadow.</p>
+<section class="shadows">
+<h2>Drop a drop shadow on me please.</h2>
+<div class="outer">
+<p>The key to drop shadows is subtlety!</p>
+</div>
+<div class="inner">
+<p>My inner shadow is showing.</p>
+</div>
+</section>
+<p class="clear">More information about both shadow properties can be found in the <a href="http://www.w3.org/TR/2010/WD-css3-text-20101005/#ltshadowgt" title="CSS Text Level 3" target="_blank">CSS Text Level 3 Specification</a> and the <a href="http://www.w3.org/TR/css3-background/#the-box-decoration-break" title="Backgrounds and Borders" target="_blank">CSS Backgrounds and Borders Module Level 3 Specification</a>.
+</body>
+</html>

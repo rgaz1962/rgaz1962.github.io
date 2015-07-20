@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Structuring navigation</title>
+<style>
+html {
+	background: #E6E3D4;
+}
+body {
+	font: 100% Georgia, "Times New Roman", Times, serif;
+	line-height: 1.4;
+	width: 70%;
+	margin: 0 auto;
+}
+/*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/*/
+/* For modern browsers */
+.cf:before, .cf:after {
+	content:"";
+	display:table;
+}
+
+.cf:after {
+	clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+	zoom:1;
+}
+h1, h2, h3 {
+	font-size: 2.4em;
+	font-weight: normal;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+	color: #575451;
+}
+h2 {
+	font-size: 1.4em;
+}
+a:link, a:visited {
+	color: #916226;
+	text-decoration: none;
+}
+a:hover {
+	color: #D5973C;
+	text-decoration: underline;
+}
+a:active {
+	outline: 0;
+	background: yellow;
+}
+a:focus {
+	outline: 2px solid red;
+}
+/*block level styles*/
+.detail {
+	width: 600px;
+	padding: 20px;
+	line-height: 1.4;
+	background: rgb(184,205,205);
+	border: 4px solid rgb(91,123,164);
+	display: block;
+}
+.detail h2 {
+	font-size: 1.6em;
+	margin-top: 0;
+}
+.detail img {
+	float: left;
+	margin-right: 1em;
+}
+.detail p {
+	color: rgb(54,64,75);
+	font-size: 1.2em;
+}
+.detail .price {
+	font-size: 1.6em;
+	font-weight: bold;
+	text-align: right;
+	margin-bottom: 0;
+}
+.detail:hover {
+	text-decoration: none;
+	background: #C8E5F0;
+	border-color: rgb(36,54,70);
+}
+.detail h2:hover, .detail p:hover {
+	color: #916226;
+}	
+</style>
+</head>
+<body>
+<h1>Styling block-level links</h1>
+<p>The recent support of block-level links in HTML5 has made it easier to link multiple items to the same page by wrapping the content with a single link. While this approach makes structuring the page easier, it does present new challenges when styling the linked elements.</p>
+<p>Because all elements are inside the link, they all equally share the link’s states. This means that when a user hovers over one element, all elements would receive the link’s styling. This can be problematic, as global link styles often show up unexpectedly on items within block-level links.</p>
+<p>The key to successfully styling block level links to write descendent selectors that target the elements inside the link, and make sure you include selectors for each of the states as well. It’s also important to remember that because the link is now a parent element, it’s properties (including background) will be painted behind the elements inside of it, not in front.</p>
+<p>Read more about block-level links on <a href="http://html5doctor.com/block-level-links-in-html-5/" title="HTML5 Doctor">HTML5 Doctor</a>.</p>
+<a href="detail.htm" title="product detail" class="detail cf">
+<h2>Ultra Glazed Blue Vase</h2>
+<img src="_images/pottery1.jpg" alt="Ultra glazed blue vase" width="200" height="200">
+<p>This attractive vase is imported from Villalpando, Spain. Fired with their signature blue glaze, this vase is a one-of-a-kind treasure that will beautify any environment.</p>
+<p class="price">$75</p>
+</a>
+</body>
+</html>

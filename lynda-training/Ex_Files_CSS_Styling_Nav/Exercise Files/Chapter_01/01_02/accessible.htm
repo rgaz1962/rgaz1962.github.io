@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Creating accessible links</title>
+<style>
+html {
+	background: #E6E3D4;
+}
+body {
+	font: 100% Georgia, "Times New Roman", Times, serif;
+	line-height: 1.4;
+	width: 70%;
+	margin: 0 auto;
+}
+h1, h2, h3 {
+	font-size: 2.4em;
+	font-weight: normal;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+	color: #575451;
+}
+h2 {
+	font-size: 1.4em;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Making links accessible</h1>
+<ul id="mainNav">
+<li><a href="index.htm">Home</a></li>
+<li><a href="products.htm">Products</a></li>
+<li><a href="blog.htm">Blog</a></li>
+<li><a href="about.htm">About</a></li>
+<li><a href="contact.htm">Contact</a></li>
+</ul>
+</header>
+<article>
+<h2>Creating accessible links</h2>
+<p>Creating accessible HTML should be an important part of any web designer&rsquo;s workflow. Ensuring that links are accessible is especially critical, as user&rsquo;s ability to navigate through your site and access content can be severely restricted through poor accessibility. Let&rsquo;s take a look at some of the ways you can increase the accessibility of your links.</p>
+<h3>Skip navigation links</h3>
+<p>Sites usually have the main navigation at the top of the page. When structuring HTML, this means that the site navigation appears above the page&rsquo;s main content. This requires people using screen readers to read through each link in the site on every page prior to actually reading content. This can be especially frustrating on sites with complex menu structures or those that contain a large amount of links. To address this, sites can contain a skip navigation link prior to the navigation that gives users the option to jump to the page&rsquo;s content. This link can be hidden or minimized through CSS while still accessible to screen readers.</p>
+<h3>Use the &ldquo;title&rdquo; attribute</h3>
+<p>Using the global <b>title</b> attribute allows you to pass along additional advisory information about links. In most browsers, title attributes are shown as &ldquo;tool tips&rdquo; when links are hovered over by the user. While this is valuable, the real value of the <b>title</b> attribute is the additional information it can pass on through other user agents like screen readers. As such, you want to make sure your <b>title</b> attributes are succinct and informative. </p>
+<h3>Make link content meaningful</h3>
+<p>Often we forget that users need the contents of a link to instruct them as to the link&rsquo;s purpose and destination. Links that use terms like &ldquo;click here&rdquo; and &ldquo;more&rdquo; may look fine in the flow of an article, but they&rsquo;re not descriptive or informative at all. Make sure than when you are creating links that the content inside the links are as descriptive as possible. When possible, don&rsquo;t include a long URL as link content simply use descriptive text to replace the URL. When using images as links, make sure you include descriptive content in the images <b>alt</b> attribute and use a descriptive <b>title</b> attribute on the link itself.</p>
+<h3>Links should be keyboard accessible</h3>
+<p>Most user agents will allow users to tab through the links on a page. If you stick to using the anchor element to create links, you avoid the issue of needing mouse input to trigger a link. In cases where pages are progressively enhanced, it&rsquo;s not uncommon to see links created purely through JavaScript on non-anchor elements. Avoid this practice by using anchors for all links, use class or id attributes for JavaScript hooks when necessary, and use the <b>tabindex</b> attribute to add non-anchor links to the tab order if non-anchor links are an absolute necessity.</p>
+<h3>Use ARIA landmark roles</h3>
+<p>WAI-ARIA landmark roles allow you to identify content regions to which users might want quick access. Among these roles are banner, contentinfo, form, main, navigation, and search. To use them, you simply use the roll attribute with the desired value. Supporting user agents then allow users to navigate directly to the desired area. While there has been some debate as to whether or not the role attribute directly conflicts with the new HTML5 elements, support for ARIA roles is fairly widespread and there&rsquo;s no reason you can&rsquo;t use the two in concert with one another. For more information on WAI-ARIA roles <a href="http://www.w3.org/TR/wai-aria/roles">click here</a>.</p>
+<p>Of course, these are just a few suggestions on how to make your links more accessible. Later in the course we&rsquo;ll explore a few best practices surrounding styling links and we&rsquo;ll discuss the impact they can have on accessibility.</p>
+<p>For more information on accessibility and navigation, visit the WebAIM&rsquo;s page on links and hypertext at<a href="http://webaim.org/techniques/hypertext/"> http://webaim.org/techniques/hypertext/</a>.</p>
+</article>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+    "menu-bcas-apps": {
+        "icon": "/_System/apps/bc-gallery/assets/images/apps_icon.png",
+        "weight": 600000,
+        "title": "Apps"
+      },
+    "menu-bc-gallery": {
+        "parent": "menu-bcas-apps",
+        "weight": 25000,
+        "title": "Gallery",
+        "attr": {
+            "href": "index.html"
+        }
+    }
+}

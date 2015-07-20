@@ -1,0 +1,181 @@
+@font-face {
+ font-family: 'ChunkFiveRegular';
+ src: url('fonts/Chunkfive.eot');
+ src: local('ChunkFive'), local('ChunkFive'), url('fonts/Chunkfive.woff') format('woff'), url('fonts/Chunkfive.ttf') format('truetype'), url('fonts/Chunkfive.svg#ChunkFive') format('svg');
+}
+ @font-face {
+ font-family: 'SansationRegular';
+ src: url('fonts/Sansation_Regular.eot');
+ src: local('Sansation'), local('Sansation'), url('fonts/Sansation_Regular.woff') format('woff'), url('fonts/Sansation_Regular.ttf') format('truetype'), url('fonts/Sansation_Regular.svg#Sansation') format('svg');
+}
+ @font-face {
+ font-family: 'SansationLight';
+ src: url('Sansation_Light.eot');
+ src: local('Sansation'), local('Sansation-Light'), url('fonts/Sansation_Light.woff') format('woff'), url('fonts/ansation_Light.ttf') format('truetype'), url('fonts/Sansation_Light.svg#Sansation-Light') format('svg');
+}
+ @font-face {
+ font-family: 'SansationBold';
+ src: url('Sansation_Bold.eot');
+ src: local('Sansation'), local('Sansation-Bold'), url('fonts/Sansation_Bold.woff') format('woff'), url('fonts/Sansation_Bold.ttf') format('truetype'), url('fonts/Sansation_Bold.svg#Sansation-Bold') format('svg');
+}
+body {
+ background-color:#EEEEEE margin:0px;
+	margin:0px;
+	border-style: none;
+	font-family: SansationRegular;
+	font-size: 11px;
+	line-height: 1.2em;
+	text-align: left;
+	position: absolute;
+	color:#666666
+}
+a:link {
+	text-decoration: none;
+	color:white;
+}
+a:hover {
+	text-decoration: underline;
+}
+h1 {
+	font-size: 1.5em;
+	font-family: SansationBold;
+	font-weight: bold;
+	text-align: left;
+}
+h2 {
+	font-size: 1.3em;
+	font-family: SansationBold;
+	font-weight: bold;
+	text-align: left;
+}
+h3 {
+	font-size: 1.2em;
+	font-family: SansationLight;
+	font-weight: bold;
+	text-align: left;
+}
+h4 {
+	font-size: 1.1em;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-align: left;
+}
+h5 {
+	font-size: 1em;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-align: left;
+}
+.leftSection {
+	border-style: solid;
+	border-color: #333333;
+	background-color: #333333;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 230px;
+	height: 1000px;
+	z-index: 1
+}
+
+.navigationStyle {
+	color:#CCCCCC;
+	font-family: ChunkFiveRegular;
+	font-size: 16px;
+	font-weight: bolder;
+	line-height: 35px;
+	letter-spacing: normal;
+	position: absolute;
+	left: 0px;
+	top: 165px;
+	width: 450px;
+	height: 80px;
+	z-index: 4;
+	-webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+}
+.navigationStyle a {
+	color:#CCCCCC;
+}
+.navigationStyle a.link {
+	text-decoration: underline;
+}
+.HRstyleOld {
+	color: #808080;
+	border-style: dotted;
+	height: 450px;
+	width: 1px;
+}
+.companyNameStyle {
+	color: #FFFFFF;
+	font-family: ChunkFiveRegular;
+	font-size: 45px;
+	font-weight: bolder;
+	line-height: 35px;
+	letter-spacing: normal;
+	position: absolute;
+	left: -50px;
+	top: 150px;
+	width: 450px;
+	height: 80px;
+	z-index: 4;
+	-webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+}
+.newsAside {
+	position: absolute;
+	left: 740px;
+	top: 200px;
+	width: 150px;
+	height: 190px;
+	z-index: 6;
+	background-color: #808080;
+	color: #FFFFFF;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	padding: 5px;
+	font-family:SansationLight;
+}
+.headerStyle {
+	text-align: right;
+	position: absolute;
+	left: 560px;
+	top: 5px;
+	width: 255px;
+	height: 25px;
+	z-index: 4
+}
+INPUT {
+	font-family:arial;
+	font-family:SansationLight;
+	font-size:9pt;
+	font-weight:bold;
+	background-color:336699;
+	border-color:336699;
+	border-style:solid;
+	border-width:2px;
+	color:gray;
+ height:20px ;
+-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+.Copyright {
+	text-align: right;
+}
+.footerStyle {
+	font-family: SansationLight;
+	position: absolute;
+	left: 415px;
+	top: 620px;
+	width: 400px;
+	height: 40px;
+	z-index: 5;
+}
+.sectionOne {
+	position: absolute;
+	left: 355px;
+	top: 105px;
+	width: 1px;
+	height: 60px;
+	z-index: 3;
+}

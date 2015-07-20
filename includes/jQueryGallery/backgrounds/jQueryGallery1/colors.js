@@ -1,0 +1,1 @@
+{"progressbar":"#000000","main_button_over":"#008ebe","main_button_up":"#00c2ff","progressbar_over":"#00c1ff","sub_button_over":"#000000","caption_back":"#000000","caption":"#ffffff","controls_back":"#000000","sub_button_up":"#000000"}

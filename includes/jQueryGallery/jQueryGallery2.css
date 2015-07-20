@@ -1,0 +1,1260 @@
+.JQueryGallerySlice {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  height: 100%;
+}
+.JQueryGalleryBox {
+  display: block;
+  position: absolute;
+  z-index: 5;
+}
+.JQueryGalleryShow {
+  display: block;
+}
+.JQueryGalleryHide {
+  display: none;
+}
+.JQueryGallery {
+  position: relative;
+  text-align: left;
+}
+/* reset slider inner li*/
+.JQueryGallery li li {
+  width: auto;
+  height: auto;
+  list-style-type: disc;
+  list-style-position: outside;
+  list-style-image: none;
+  display: none;
+}
+/* content style start */
+#jQueryGallery2 .header {
+  background: none no-repeat left center scroll;
+  border-left: 0px none #0066cc;
+  border-top: 0px none #0066cc;
+  border-bottom: 0px none #0066cc;
+  border-right: 0px none #0066cc;
+  padding: 0px 0px 0px 0px;
+  color: #ff0000;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1;
+}
+#jQueryGallery2 .subheader {
+  background: none no-repeat left center scroll;
+  border-left: 0px none #0066cc;
+  border-top: 0px none #0066cc;
+  border-bottom: 0px none #0066cc;
+  border-right: 0px none #0066cc;
+  padding: 0px 0px 0px 0px;
+  color: #ff0000;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1;
+}
+#jQueryGallery2 .paragraph {
+  background: none no-repeat left center scroll;
+  border-left: 0px none #0066cc;
+  border-top: 0px none #0066cc;
+  border-bottom: 0px none #0066cc;
+  border-right: 0px none #0066cc;
+  padding: 0px 0px 0px 0px;
+  color: #ff0000;
+  text-align: left;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1;
+}
+/* content style end */
+/* content style end */
+#jQueryGallery2Container {
+  background: none no-repeat left center scroll;
+  border-left: 0px none #0066cc;
+  border-top: 0px none #0066cc;
+  border-bottom: 0px none #0066cc;
+  border-right: 0px none #0066cc;
+  position: relative;
+  width: 900px;
+  height: 762px;
+  color: #000000;
+}
+#jQueryGallery2 {
+  background: none no-repeat left top scroll;
+  border-left: 1px solid #000000;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  border-right: 1px solid #000000;
+  padding: 0px 0px 0px 0px;
+  position: absolute;
+  color: #000000;
+  width: 792px;
+  height: 612px;
+  top: 0px;
+  left: 53px;
+  right: auto;
+  bottom: auto;
+  display: block;
+}
+#jQueryGallery2 img {
+  border-left: 0 none #000000;
+  border-top: 0 none #000000;
+  border-bottom: 0 none #000000;
+  border-right: 0 none #000000;
+}
+#jQueryGallery2 ul, #jQueryGallery2 li {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  position: relative;
+  list-style-type: none;
+  list-style-position: outside;
+  list-style-image: none;
+}
+#jQueryGallery2_controls_in {
+  background: url('skin01/acid/controls_background.png') repeat-x left top scroll;
+  font: normal normal normal 12px/100% Arial,Helvetica,sans-serif;
+  border-left: 0px none #666666;
+  border-top: 0px none #666666;
+  border-bottom: 0px none #666666;
+  border-right: 0px none #666666;
+  padding: 0px 0px 0px 0px;
+  position: absolute;
+  color: #000000;
+  text-decoration: none;
+  text-align: left;
+  width: 900px;
+  height: 45px;
+  z-index: 105;
+  left: 0px;
+  right: auto;
+  top: auto;
+  bottom: 95px;
+}
+/*	nav bar resets */
+#jQueryGallery2_thumbscroll_in, #jQueryGallery2_thumbscroll_in ul, #jQueryGallery2_thumbscroll_in li {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  position: relative;
+  list-style-type: none;
+  list-style-position: outside;
+  list-style-image: none;
+  width: auto;
+  height: auto;
+}
+/*	nav bar container */
+#jQueryGallery2_thumbscroll_in {
+  position: absolute;
+  top: auto;
+  left: 177px;
+}
+/*	nav bar container */
+#jQueryGallery2_thumbscroll_in {
+  background: none repeat-x left top scroll;
+  border-left: 0px none transparent;
+  border-top: 0px solid transparent;
+  border-bottom: 0px none transparent;
+  border-right: 0px none transparent;
+  padding: 0px 0px 0px 0px;
+  width: 550px;
+  height: 26px;
+  right: auto;
+  bottom: 9px;
+  overflow: hidden;
+  z-index: 110;
+}
+/*	nav bar ul */
+#jQueryGallery2_thumbscroll_in ul {
+  position: relative;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+}
+/*	nav bar element container */
+#jQueryGallery2_thumbscroll_in li {
+  float: left;
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
+/*	nav bar element normal state */
+#jQueryGallery2_thumbscroll_in li a {
+  background: url(' ') no-repeat left top scroll;
+  font: normal normal normal 0px/0px Arial,Helvetica,sans-serif;
+  border-left: 0px solid #ffffff;
+  border-top: 0px solid #ffffff;
+  border-bottom: 0px solid #ffffff;
+  border-right: 0px solid #ffffff;
+  padding: 0px 0px 0px 0px;
+  float: left;
+  width: 29px;
+  height: 26px;
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  text-transform: none;
+}
+/*	nav bar element hover state */
+#jQueryGallery2_thumbscroll_in li a.hover {
+  background: url(' ') no-repeat left top scroll;
+  font: normal normal normal 0px/0px Arial,Helvetica,sans-serif;
+  border-left: 0px solid #ffffff;
+  border-top: 0px solid #ffffff;
+  border-bottom: 0px solid #ffffff;
+  border-right: 0px solid #ffffff;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  float: left;
+  width: 29px;
+  height: 26px;
+  cursor: pointer;
+  color: #00ffff;
+  text-decoration: none;
+  text-align: left;
+  text-transform: none;
+}
+/*	nav bar element active state */
+#jQueryGallery2_thumbscroll_in li a.active {
+  background: none no-repeat left top scroll;
+  font: normal normal normal 0px/0px Arial,Helvetica,sans-serif;
+  border-left: 0px solid #ffffff;
+  border-top: 0px solid #ffffff;
+  border-bottom: 0px solid #ffffff;
+  border-right: 0px solid #ffffff;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  float: left;
+  width: 29px;
+  height: 26px;
+  cursor: pointer;
+  color: #0000ff;
+  text-decoration: none;
+  text-align: left;
+  text-transform: none;
+}
+#jQueryGallery2_thumbscroll_in li a img {
+  border-left: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  padding: 0px 0px 0px 0px;
+}
+#jQueryGallery2_thumbscroll_in li a.hover img {
+  border-left: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  padding: 0px 0px 0px 0px;
+}
+#jQueryGallery2_thumbscroll_in li a.active img {
+  border-left: 1px solid #000000;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  border-right: 1px solid #000000;
+  padding: 0px 0px 0px 0px;
+}
+#jQueryGallery2_thumbscroll_back_in {
+  background: url('skin01/acid/thumbsback_up.png') no-repeat center center scroll;
+  font: normal normal normal 12px/100% "Arial Black",Gadget,sans-serif;
+  border-left: 0px solid #000000;
+  border-top: 0px solid #000000;
+  border-bottom: 0px solid #000000;
+  border-right: 0px solid #000000;
+  padding: 0px 0px 0px 0px;
+  width: 30px;
+  height: 45px;
+  cursor: pointer;
+  right: auto;
+  bottom: 0px;
+  color: #666666;
+  text-decoration: none;
+  text-align: center;
+  text-transform: none;
+  position: absolute;
+  left: 100px;
+  top: auto;
+  display: block;
+  z-index: 111;
+}
+#jQueryGallery2_thumbscroll_back_in.hover {
+  background: url('skin01/acid/thumbsback_over.png') no-repeat center center scroll;
+  font: normal normal normal 12px/100% "Arial Black",Gadget,sans-serif;
+  border-left: 0px solid #000000;
+  border-top: 0px solid #000000;
+  border-bottom: 0px solid #000000;
+  border-right: 0px solid #000000;
+  padding: 0px 0px 0px 0px;
+  color: #666666;
+  text-decoration: none;
+  text-align: center;
+  text-transform: none;
+}
+#jQueryGallery2_thumbscroll_next_in {
+  background: url('skin01/acid/thumbsnext_up.png') no-repeat center center scroll;
+  font: normal normal normal 12px/100% "Arial Black",Gadget,sans-serif;
+  border-left: 0px solid #000000;
+  border-top: 0px solid #000000;
+  border-bottom: 0px solid #000000;
+  border-right: 0px solid #000000;
+  padding: 0px 0px 0px 0px;
+  width: 30px;
+  height: 45px;
+  cursor: pointer;
+  right: 100px;
+  bottom: 0px;
+  color: #666666;
+  text-decoration: none;
+  text-align: center;
+  text-transform: none;
+  position: absolute;
+  left: auto;
+  top: auto;
+  display: block;
+  z-index: 112;
+}
+#jQueryGallery2_thumbscroll_next_in.hover {
+  background: url('skin01/acid/thumbsnext_over.png') no-repeat center center scroll;
+  font: normal normal normal 12px/100% "Arial Black",Gadget,sans-serif;
+  border-left: 0px solid #000000;
+  border-top: 0px solid #000000;
+  border-bottom: 0px solid #000000;
+  border-right: 0px solid #000000;
+  padding: 0px 0px 0px 0px;
+  color: #666666;
+  text-decoration: none;
+  text-align: center;
+  text-transform: none;
+}
+/*	inner back button positioning */
+#jQueryGallery2_back_in {
+  position: absolute;
+  top: auto;
+  left: 130px;
+}
+/*	inner back button normal state */
+#jQueryGallery2_back_in {
+  background: url('skin01/acid/back_button_up.png') no-repeat left top scroll;
+  font: normal normal normal 28px/100% "Comic Sans MS",cursive;
+  border-left: 0px solid #666666;
+  border-top: 0px solid #666666;
+  border-bottom: 0px solid #111111;
+  border-right: 0px solid #666666;
+  padding: 0px 0px 0px 0px;
+  width: 40px;
+  height: 45px;
+  cursor: pointer;
+  right: auto;
+  bottom: 0px;
+  color: #e4e4e4;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 120;
+}
+/*	inner back button hover state */
+#jQueryGallery2_back_in.hover {
+  background: url('skin01/acid/back_button_over.png') no-repeat left top scroll;
+  font: normal normal normal 28px/1 "Comic Sans MS",cursive;
+  border-left: 0px solid #666666;
+  border-top: 0px solid #666666;
+  border-bottom: 0px solid #111111;
+  border-right: 0px solid #666666;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 40px;
+  height: 45px;
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+/*	inner next button positioning */
+#jQueryGallery2_next_in {
+  position: absolute;
+  top: auto;
+  left: auto;
+}
+/*	inner next button normal state */
+#jQueryGallery2_next_in {
+  background: url('skin01/acid/next_button_up.png') no-repeat left top scroll;
+  font: normal normal normal 28px/100% "Comic Sans MS",cursive;
+  border-left: 0px solid #222222;
+  border-top: 0px solid #666666;
+  border-bottom: 0px solid #666666;
+  border-right: 0px solid #666666;
+  padding: 0px 0px 0px 0px;
+  width: 40px;
+  height: 45px;
+  cursor: pointer;
+  right: 130px;
+  bottom: 0px;
+  color: #e4e4e4;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 121;
+}
+/*	inner next button hover state */
+#jQueryGallery2_next_in.hover {
+  background: url('skin01/acid/next_button_over.png') no-repeat left top scroll;
+  font: normal normal normal 28px/100% "Comic Sans MS",cursive;
+  border-left: 0px solid #222222;
+  border-top: 0px solid #666666;
+  border-bottom: 0px solid #666666;
+  border-right: 0px solid #666666;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 40px;
+  height: 45px;
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+/*	buttons container positioning*/
+#jQueryGallery2_playpause_in {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 4px;
+  top: auto;
+  right: auto;
+  bottom: 0px;
+  z-index: 130;
+}
+/* play/pause buttons common properties*/
+#jQueryGallery2_playpause_in div {
+  display: block;
+  cursor: pointer;
+  float: left;
+}
+/*	play button normal state */
+#jQueryGallery2_playpause_in div.play {
+  background: url('skin01/acid/play_button_up.png') no-repeat left top scroll;
+  font: normal normal normal 12px/100% "Arial Black",Gadget,sans-serif;
+  border-left: 0px solid #666666;
+  border-top: 0px solid #666666;
+  border-bottom: 0px solid #666666;
+  border-right: 0px solid #666666;
+  padding: 0px 0px 0px 0px;
+  width: 40px;
+  height: 45px;
+  cursor: pointer;
+  color: #666666;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 130;
+}
+/*	play button hover state */
+#jQueryGallery2_playpause_in div.play.hover {
+  background: url('skin01/acid/play_button_over.png') no-repeat left top scroll;
+  font: normal normal normal 12px/100% "Arial Black",Gadget,sans-serif;
+  border-left: 0px solid #666666;
+  border-top: 0px solid #666666;
+  border-bottom: 0px solid #666666;
+  border-right: 0px solid #666666;
+  padding: 0px 0px 0px 0px;
+  width: 40px;
+  height: 45px;
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+/*	pause button normal state */
+#jQueryGallery2_playpause_in div.pause {
+  background: url('skin01/acid/pause_button_up.png') no-repeat left top scroll;
+  font: normal normal normal 12px/100% "Arial Black",Gadget,sans-serif;
+  border-left: 0px solid #666666;
+  border-top: 0px solid #666666;
+  border-bottom: 0px solid #666666;
+  border-right: 0px solid #666666;
+  padding: 0px 0px 0px 0px;
+  width: 40px;
+  height: 45px;
+  cursor: pointer;
+  color: #666666;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  display: none;
+  z-index: 130;
+}
+/*	pause button hover state */
+#jQueryGallery2_playpause_in div.pause.hover {
+  background: url('skin01/acid/pause_button_over.png') no-repeat left top scroll;
+  font: normal normal normal 12px/100% "Arial Black",Gadget,sans-serif;
+  border-left: 0px solid #666666;
+  border-top: 0px solid #666666;
+  border-bottom: 0px solid #666666;
+  border-right: 0px solid #666666;
+  padding: 0px 0px 0px 0px;
+  width: 40px;
+  height: 45px;
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+#jQueryGallery2_caption_in {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#jQueryGallery2_caption_in {
+  background: #090006 none no-repeat left top scroll;
+  font: normal normal normal 12px/100% Georgia,"Times New Roman",Times,serif;
+  border-left: 0px none #666666;
+  border-top: 0px none #666666;
+  border-bottom: 0px none #666666;
+  border-right: 0px none #666666;
+  padding: 13px 0px 0px 13px;
+  position: absolute;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: left;
+  width: 887px;
+  height: 27px;
+  z-index: 115;
+  bottom: auto;
+  right: auto;
+}
+.jQueryGallery2_tooltip_in {
+  border-left: 1px solid #000000;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  border-right: 1px solid #000000;
+  padding: 3px 3px 3px 3px;
+  display: none;
+  position: absolute;
+  z-index: 1001;
+  width: 100px;
+  height: 60px;
+  background-color: #333333;
+  background-position: left top;
+}
+.jQueryGallery2_tooltip_in_preview_wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.jQueryGallery2_tooltip_in_preview {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  list-style-type: none;
+}
+.jQueryGallery2_tooltip_in_preview li {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  float: left;
+}
+.jQueryGallery2_tooltip_in_preview li img {
+  display: block;
+}
+/*	inner back button positioning */
+#jQueryGallery2_fullscreen_in {
+  position: absolute;
+  top: auto;
+  left: auto;
+}
+/*	inner back button normal state */
+#jQueryGallery2_fullscreen_in {
+  background: url('skin01/acid/fullscreen_button_up.png') no-repeat left top scroll;
+  font: normal normal normal 12px/100% "Arial Black",Gadget,sans-serif;
+  border-left: 0px none #666666;
+  border-top: 0px none #666666;
+  border-bottom: 0px none #666666;
+  border-right: 0px none #666666;
+  padding: 0px 0px 0px 0px;
+  width: 40px;
+  height: 45px;
+  cursor: pointer;
+  right: 0px;
+  bottom: 0px;
+  color: #666666;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 126;
+}
+/*	inner back button hover state */
+#jQueryGallery2_fullscreen_in.hover {
+  background: url('skin01/acid/fullscreen_button_over.png') no-repeat left top scroll;
+  font: normal normal normal 12px/100% "Arial Black",Gadget,sans-serif;
+  border-left: 0px none #666666;
+  border-top: 0px none #666666;
+  border-bottom: 0px none #666666;
+  border-right: 0px none #666666;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 40px;
+  height: 45px;
+  cursor: pointer;
+  color: #666666;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 126;
+}
+#supersized-loader {
+  background: url(fullscreen_assets/progress.gif) no-repeat center center scroll;
+  margin: -30px 0 0 -30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  width: 60px;
+  height: 60px;
+  text-indent: -999em;
+}
+#supersized {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+}
+#supersized img {
+  border-left: 0 none #000000;
+  border-top: 0 none #000000;
+  border-bottom: 0 none #000000;
+  border-right: 0 none #000000;
+  width: auto;
+  height: auto;
+  position: relative;
+  display: none;
+  outline-width: 0;
+  outline-style: none;
+  outline-color: #000000;
+}
+#supersized.speed img {
+  -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: -moz-crisp-edges;
+}
+/*Speed*/
+#supersized.quality img {
+  -ms-interpolation-mode: bicubic;
+  image-rendering: optimizeQuality;
+}
+/*Quality*/
+#supersized li {
+  background: #111 none repeat top left scroll;
+  display: block;
+  list-style-type: none;
+  list-style-position: outside;
+  list-style-image: none;
+  z-index: 1;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#supersized a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#supersized li.prevslide {
+  z-index: 2;
+}
+#supersized li.activeslide {
+  z-index: 3;
+}
+#supersized li.image-loading {
+  background: #111 url(fullscreen_assets/progress.gif) no-repeat center center scroll;
+  width: 100%;
+  height: 100%;
+}
+#supersized li.image-loading img {
+  visibility: hidden;
+}
+#supersized li.prevslide img, #supersized li.activeslide img {
+  display: inline;
+}
+/* Controls Bar
+	----------------------------*/
+#controls-wrapper {
+  background: url(fullscreen_assets/nav-bg.png) repeat-x top left scroll;
+  margin: 0 auto 0 auto;
+  height: 42px;
+  width: 100%;
+  bottom: 0px;
+  left: 0;
+  z-index: 4;
+  position: fixed;
+}
+#controls {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  text-align: left;
+  z-index: 5;
+}
+#slidecounter {
+  margin: 0px 10px 0 15px;
+  float: left;
+  color: #999;
+  text-shadow: #000 0 -1px 0;
+  line-height: 42px;
+}
+#slidecaption {
+  margin: 0 20px 0 0;
+  overflow: hidden;
+  float: left;
+  color: #FFF;
+  text-shadow: #000 1px 1px 2px;
+  line-height: 42px;
+}
+#navigation {
+  margin: 0px 20px 0 0;
+  float: right;
+}
+#play-button {
+  background: url('fullscreen_assets/bg-hover.png') repeat-x 0 44px scroll;
+  border-right: 1px solid #333;
+  float: left;
+  margin-top: 1px;
+}
+#play-button:hover {
+  cursor: pointer;
+  background-position: 0 1px;
+}
+#prevslide, #nextslide {
+  position: absolute;
+  height: 43px;
+  width: 43px;
+  top: 50%;
+  opacity: 0.6;
+  margin-top: -21px;
+}
+#prevslide {
+  background: url('fullscreen_assets/back.png') repeat top left scroll;
+  left: 10px;
+}
+#nextslide {
+  background: url('fullscreen_assets/forward.png') repeat top left scroll;
+  right: 10px;
+}
+#prevslide:active, #nextslide:active {
+  margin-top: -19px;
+}
+#prevslide:hover, #nextslide:hover {
+  cursor: pointer;
+}
+ul#slide-list {
+  padding: 15px 0 15px 0;
+  float: left;
+  position: absolute;
+  left: 50%;
+}
+ul#slide-list li {
+  margin: 0 5px 0 0;
+  list-style-type: none;
+  list-style-position: outside;
+  list-style-image: none;
+  width: 12px;
+  height: 12px;
+  float: left;
+}
+ul#slide-list li.current-slide a, ul#slide-list li.current-slide a:hover {
+  background-position: 0 0px;
+}
+ul#slide-list li a {
+  background: url('fullscreen_assets/nav-dot.png') no-repeat 0 -24px scroll;
+  display: block;
+  width: 12px;
+  height: 12px;
+}
+ul#slide-list li a:hover {
+  cursor: pointer;
+  background-position: 0 -12px;
+}
+#tray-button {
+  background: url('fullscreen_assets/bg-hover.png') repeat-x 0 44px scroll;
+  border-left: 1px solid #333;
+  float: right;
+  margin-top: 1px;
+}
+#tray-button:hover {
+  cursor: pointer;
+  background-position: 0 1px;
+}
+/* Progress Bar
+	----------------------------*/
+#progress-back {
+  background: url('fullscreen_assets/progress-back.png') repeat-x top left scroll;
+  z-index: 5;
+  position: fixed;
+  bottom: 42px;
+  left: 0;
+  height: 8px;
+  width: 100%;
+}
+#progress-bar {
+  background: url('fullscreen_assets/progress-bar.png') repeat-x top left scroll;
+  position: relative;
+  height: 8px;
+  width: 100%;
+}
+/* Thumbnail Navigation
+	----------------------------*/
+#nextthumb,#prevthumb {
+  background: #ddd none repeat top left scroll;
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  z-index: 2;
+  display: none;
+  position: fixed;
+  bottom: 61px;
+  height: 75px;
+  width: 100px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 5px #000;
+}
+#nextthumb {
+  right: 12px;
+}
+#prevthumb {
+  left: 12px;
+}
+#nextthumb img, #prevthumb img {
+  width: 150px;
+  height: auto;
+}
+#nextthumb:active, #prevthumb:active {
+  bottom: 59px;
+}
+#nextthumb:hover, #prevthumb:hover {
+  cursor: pointer;
+}
+#closethumb {
+  background: url('fullscreen_assets/close.png') repeat top left scroll;
+  z-index: 2;
+  display: block;
+  position: fixed;
+  top: 0px;
+  height: 70px;
+  width: 70px;
+  overflow: hidden;
+  right: 0px;
+}
+#closethumb:hover {
+  background: url('fullscreen_assets/close.png') repeat top left scroll;
+  cursor: pointer;
+}
+/* Thumbnail Tray
+	----------------------------*/
+#thumb-tray {
+  background: url(fullscreen_assets/bg-black.png) repeat top left scroll;
+  position: fixed;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  height: 150px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  -moz-box-shadow: 0px 0px 4px #000;
+  -webkit-box-shadow: 0px 0px 4px #000;
+  box-shadow: 0px 0px 4px #000;
+}
+#thumb-back, #thumb-forward {
+  position: absolute;
+  z-index: 5;
+  bottom: 42px;
+  height: 108px;
+  width: 40px;
+}
+#thumb-back {
+  background: url('fullscreen_assets/thumb-back.png') no-repeat center center scroll;
+  left: 0;
+}
+#thumb-forward {
+  background: url('fullscreen_assets/thumb-forward.png') no-repeat center center scroll;
+  right: 0;
+}
+#thumb-back:hover, #thumb-forward:hover {
+  cursor: pointer;
+  background-color: rgba(256,256,256, 0.1);
+}
+#thumb-back:hover {
+  border-right: 1px solid rgba(256, 256, 256, 0.2);
+}
+#thumb-forward:hover {
+  border-left: 1px solid rgba(256, 256, 256, 0.2);
+}
+ul#thumb-list {
+  padding: 0 0px 0 0px;
+  display: inline-block;
+  list-style-type: none;
+  list-style-position: outside;
+  list-style-image: none;
+  position: relative;
+  left: 0px;
+}
+ul#thumb-list li {
+  background: #111 none repeat top left scroll;
+  margin: 0 0 0 0;
+  list-style-type: none;
+  list-style-position: outside;
+  list-style-image: none;
+  display: inline;
+  width: 150px;
+  height: 108px;
+  overflow: hidden;
+  float: left;
+}
+ul#thumb-list li img {
+  width: 200px;
+  height: auto;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+}
+ul#thumb-list li.current-thumb img, ul#thumb-list li:hover img {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+}
+ul#thumb-list li:hover {
+  cursor: pointer;
+}
+/*	inner back button positioning */
+#jQueryGallery2_albums_in {
+  position: absolute;
+  top: auto;
+  left: auto;
+}
+/*	inner back button normal state */
+#jQueryGallery2_albums_in {
+  background: url('skin01/acid/albums_button_up.png') no-repeat left top scroll;
+  font: normal normal normal 12px/100% "Arial Black",Gadget,sans-serif;
+  border-left: 0px none #666666;
+  border-top: 0px none #666666;
+  border-bottom: 0px none #666666;
+  border-right: 0px none #666666;
+  padding: 0px 0px 0px 0px;
+  width: 40px;
+  height: 45px;
+  cursor: pointer;
+  right: 40px;
+  bottom: 0px;
+  color: #666666;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 125;
+}
+/*	inner back button hover state */
+#jQueryGallery2_albums_in.hover {
+  background: url('skin01/acid/albums_button_over.png') no-repeat left top scroll;
+  font: normal normal normal 12px/100% "Arial Black",Gadget,sans-serif;
+  border-left: 0px none #666666;
+  border-top: 0px none #666666;
+  border-bottom: 0px none #666666;
+  border-right: 0px none #666666;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 40px;
+  height: 45px;
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+/*	nav bar resets */
+#jQueryGallery2_albumsContainer_in, #jQueryGallery2_albumsContainer_in ul, #jQueryGallery2_albumsContainer_in li {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  position: relative;
+  list-style-type: none;
+  list-style-position: outside;
+  list-style-image: none;
+  width: auto;
+  height: auto;
+}
+/*	nav bar container */
+#jQueryGallery2_albumsContainer_in {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+/*	nav bar container */
+#jQueryGallery2_albumsContainer_in {
+  background: #333333 none no-repeat left top scroll;
+  border-left: 0px solid #000000;
+  border-top: 0px solid #000000;
+  border-bottom: 0px solid #000000;
+  border-right: 0px solid #000000;
+  padding: 15px 15px 15px 15px;
+  overflow: hidden;
+  width: 870px;
+  height: 687px;
+  left: 0px;
+  bottom: auto;
+  z-index: 140;
+  right: auto;
+  display: none;
+}
+/*	nav bar ul */
+#jQueryGallery2_albumsContainer_in ul {
+  position: relative;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+}
+/*	nav bar element container */
+#jQueryGallery2_albumsContainer_in li {
+  float: left;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+/*	nav bar element normal state */
+#jQueryGallery2_albumsContainer_in li a {
+  background: #666666 none no-repeat left top scroll;
+  font: normal normal normal 12px/100% Arial,Helvetica,sans-serif;
+  border-left: 1px solid #333333;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-right: 1px solid #333333;
+  padding: 4px 4px 4px 4px;
+  width: 266px;
+  height: 227px;
+  display: block;
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+  text-align: left;
+  text-transform: none;
+  overflow: hidden;
+}
+#jQueryGallery2_albumsContainer_in li a span.title {
+  font: normal normal bold 12px/100% Arial,Helvetica,sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: left;
+  text-transform: none;
+}
+#jQueryGallery2_albumsContainer_in li a span.subtitle {
+  font: normal normal bold 12px/100% Arial,Helvetica,sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: left;
+  text-transform: none;
+}
+/*	nav bar element hover state */
+#jQueryGallery2_albumsContainer_in li a.hover {
+  background: #888888 none no-repeat left top scroll;
+  font: normal normal normal 12px/100% Arial,Helvetica,sans-serif;
+  border-left: 1px solid #333333;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-right: 1px solid #333333;
+  margin: 0px 0px 0px 0px;
+  padding: 4px 4px 4px 4px;
+  color: #000000;
+  text-decoration: none;
+  text-align: left;
+  text-transform: none;
+  width: 266px;
+  height: 227px;
+}
+#jQueryGallery2_albumsContainer_in li a.hover span.title {
+  font: normal normal bold 12px/1 Arial,Helvetica,sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: left;
+  text-transform: none;
+}
+#jQueryGallery2_albumsContainer_in li a.hover span.subtitle {
+  font: normal normal bold 12px/100% Arial,Helvetica,sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: left;
+  text-transform: none;
+}
+/*	nav bar element active state */
+#jQueryGallery2_albumsContainer_in li a.active {
+  background: #888888 none no-repeat left top scroll;
+  font: normal normal normal 12px/100% Arial,Helvetica,sans-serif;
+  border-left: 1px solid #333333;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-right: 1px solid #333333;
+  margin: 0px 0px 0px 0px;
+  padding: 4px 4px 4px 4px;
+  color: #000000;
+  text-decoration: none;
+  text-align: left;
+  text-transform: none;
+  width: 266px;
+  height: 227px;
+}
+#jQueryGallery2_albumsContainer_in li a.active span.title {
+  font: normal normal bold 12px/1 Arial,Helvetica,sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: left;
+  text-transform: none;
+}
+#jQueryGallery2_albumsContainer_in li a.active span.subtitle {
+  font: normal normal bold 12px/100% Arial,Helvetica,sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: left;
+  text-transform: none;
+}
+#jQueryGallery2_albumsContainer_in li a img {
+  padding: 0px 0px 0px 0px;
+  width: 263px;
+  height: 169px;
+  border-left-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+}
+#jQueryGallery2_albumsContainer_next_in {
+  background: #333333 none no-repeat left top scroll;
+  font: normal normal normal 12px/100% Arial,Helvetica,sans-serif;
+  border-left: 0px none #000000;
+  border-top: 0px none #000000;
+  border-bottom: 0px none #000000;
+  border-right: 0px none #000000;
+  padding: 10px 0px 0px 0px;
+  width: 384px;
+  height: 25px;
+  cursor: pointer;
+  right: auto;
+  bottom: auto;
+  color: #cccccc;
+  text-decoration: none;
+  text-align: center;
+  text-transform: none;
+  position: absolute;
+  left: 405px;
+  top: 371px;
+  display: none;
+  z-index: 145;
+}
+#jQueryGallery2_albumsContainer_next_in.hover {
+  background: #666666 none no-repeat left top scroll;
+  font: normal normal normal 12px/1 Arial,Helvetica,sans-serif;
+  border-left: 0px none #000000;
+  border-top: 0px none #000000;
+  border-bottom: 0px none #000000;
+  border-right: 0px none #000000;
+  padding: 10px 0px 0px 0px;
+  width: 384px;
+  height: 25px;
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  text-transform: none;
+}
+#jQueryGallery2_albumsContainer_back_in {
+  background: #333333 none no-repeat left top scroll;
+  font: normal normal normal 12px/100% Arial,Helvetica,sans-serif;
+  border-left: 0px solid #000000;
+  border-top: 0px solid #000000;
+  border-bottom: 0px solid #000000;
+  border-right: 0px solid #000000;
+  padding: 10px 0px 0px 0px;
+  width: 384px;
+  height: 25px;
+  cursor: pointer;
+  right: auto;
+  bottom: auto;
+  color: #cccccc;
+  text-decoration: none;
+  text-align: center;
+  text-transform: none;
+  position: absolute;
+  left: 10px;
+  top: 371px;
+  display: none;
+  z-index: 146;
+}
+#jQueryGallery2_albumsContainer_back_in.hover {
+  background: #666666 none no-repeat left top scroll;
+  font: normal normal normal 12px/1 Arial,Helvetica,sans-serif;
+  border-left: 0px solid #000000;
+  border-top: 0px solid #000000;
+  border-bottom: 0px solid #000000;
+  border-right: 0px solid #000000;
+  margin: 0px 0px 0px 0px;
+  padding: 10px 0px 0px 0px;
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  text-transform: none;
+}
+/*	inner back button positioning */
+#jQueryGallery2_progressbar_in {
+  position: absolute;
+  top: auto;
+  left: 3px;
+}
+/*	inner back button normal state */
+#jQueryGallery2_progressbar_in {
+  background: #261e23 none no-repeat left top scroll;
+  font: normal normal normal 12px/100% "Arial Black",Gadget,sans-serif;
+  border-left: 0px none #666666;
+  border-top: 0px none #666666;
+  border-bottom: 0px none #666666;
+  border-right: 0px none #666666;
+  padding: 0px 0px 0px 0px;
+  width: 895px;
+  height: 2px;
+  overflow: hidden;
+  right: auto;
+  bottom: 80px;
+  color: #666666;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 113;
+}
+/*	inner back button hover state */
+#jQueryGallery2_progressbar_in div.progress-bar {
+  background: #cee319 none no-repeat left top scroll;
+  font: normal normal normal 12px/100% "Arial Black",Gadget,sans-serif;
+  border-left: 0px none #666666;
+  border-top: 0px none #666666;
+  border-bottom: 0px none #666666;
+  border-right: 0px none #666666;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+#jQueryGallery2_subcaption_in {
+  width: 900px;
+}

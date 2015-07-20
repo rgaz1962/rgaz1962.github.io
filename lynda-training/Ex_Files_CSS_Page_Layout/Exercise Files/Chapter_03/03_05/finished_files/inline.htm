@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>floating inline elements</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+h1, h2, h3, h4, p, ul, li, address, blockquote {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: #542733;
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 720px;
+	margin: 0 auto;
+	font: 90%/1.6 Arial, Helvetica, sans-serif;
+	background: #fff;
+	padding: 25px;
+}
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+article {
+	clear: both;
+}
+header h1 {
+	font-size: 3em;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	font-weight: normal;
+	line-height: 1.2;
+}
+article h1, article h2, article h3, article h4 {
+	font-family: Georgia, Times, serif;
+	font-weight: normal;
+}
+article h1{
+	font-size: 2.8em;
+	margin: 1em 0 .6em;
+}
+article h2 {
+	font-size: 1.8em;
+	margin: 1em 0 .4em;
+}
+article h3 {
+	font-size: 1.4em;
+	margin: 1.2em 0 .2em;
+}
+article p {
+	margin-bottom: 1em;
+}
+/*styles go here*/
+/*float image styles here*/
+.textWrap img {
+	float: left;
+	border: 1px solid #333;
+	margin: 0 1em 1em 0;
+}
+.textWrap h3 {
+	clear: both;
+}
+/*dropcap styles here*/
+.dropcap p:first-of-type:first-letter {
+	float: left;
+	font-family: Georgia, Times, serif;
+	font-size: 4em;
+	margin: 0 5px 0 0;
+	line-height: .7;
+}
+/*complex styes here*/
+.complex {
+	border: 1px solid #333;
+	padding: 1em;
+	background: #d4beaa;
+	font-size: 110%;
+	overflow: hidden;
+}
+.complex img {
+	float: left;
+	margin-right: 1em;
+}
+.more {
+	float: left;
+	margin: 0;
+	margin-left: 14em;
+	line-height: 1.6em;
+	padding: 0 5px;
+	background: #3b2f24;
+	color: white;
+}
+.price {
+	float: right;
+	margin: 0;
+	font-size: 1.6em;
+	font-weight: bold;
+	margin-top: -.3em;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Floating inline elements</h1>
+</header>
+<article>
+<h2>How can floating help inline flow?</h2>
+<section class="textWrap">
+<p><img src="_images/tall.jpg" width="268" height="367" alt="Tall image">Floating inline elements can help us wrap text around images, isolate emphasized content, and style complex regions like quotes, product descriptions, and blog comments.</p>
+<p>When floated next to a block level element line boxes (such as lines of text) will shorten to make room for the margin box of the float. That means that while text will wrap around floated elements, the container of the text still behaves as if the floated element is removed from normal flow. Floated elements are always stacked on top of elements in normal flow when any overlapping occurs. This means that if an image is floated next to a paragraph, the lines of text will wrap around the image, but the paragraphs background color (if there is one) will appear behind the image.</p>
+<h3>Not all headlines should float.</h3>
+<p>Nothing is better than the world, you say. Nor is there, indeed, anything on earth better than the city of Rome; do you think, therefore, that our city has a mind; that it thinks and reasons; or that this most beautiful city, being void of sense, is not preferable to an ant, because an ant has sense, understanding, reason, and memory? You should consider, Balbus, what ought to be allowed you, and not advance things because they please you.</p>
+</section>
+<section class="dropcap">
+<h2>Creating drop caps</h2>
+<p>You can use floats to create dropcaps as well. Simply float the first letter of the desired paragraph and set the margins of the float to control spacing. If you want to drop cap a range of letters, simply use a span tag around the letters you want to drop. You can use relative positioning or top margins to help position the cap relative to the paragraph. Because the construct for float elements is a little different in earlier versions of Internet Explorer, if you're targeting versions prior to IE 8 you may need to feed slightly different margin values through conditional comments to have consistent styling. Firefox does NOT allow the dropcap to calculate its own line-height, forcing it to inherit it from the parent paragraph. WebKit based browsers will. This means that in order to have dropcaps line up consistently in WebKit based browsers and Firefox, you'll need to apply a line-height equal to the height of the cap (start at around .8, although you'll need to experiment  with it based on the font you're using).</p>
+</section>
+<section class="complex">
+<p><img src="_images/nyc.jpg" width="150" height="150" alt="New York New York">Floating can help style complex regions like product descriptions, widgets, or other detailed regions that normal flow won't accomodate. Often, deciding how these regions should be styled is up to the designer, as there may be several different ways to arrive at the same layout.</p>
+<p class="more">More information</p>
+<p class="price">$19.95</p>
+</section>
+</article>
+</body>
+</html>

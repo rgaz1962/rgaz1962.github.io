@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>designing for mobile</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="_css/global.css" media="screen, projection">
+</head>
+<body>
+<h1>Designing for mobile</h1>
+<p>When designing for mobile, resource management and taking control over how your page displays are crucial. To control initial page display, you can use the meta viewport tag. The syntax you see here will force the width of the page to match the actual device-width, and set the inital scale to 1, which will force the device to display your page at the designed width.<p>
+<pre>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</pre>
+<p>You also should carefully monitor your resources, and the amount of requests you make to the server. Large images, or multiple HTTP requests can impact site performance on mobile devices. You can reduce this by combining media queries into a single external CSS file, and place the bulk of image requests in the CSS in the form of background images. This allows you to serve smaller graphics to mobile devices while using larger graphics for desktop versions.</p>
+<h2>Photo gallery</h2>
+<div class="photos">
+<div class="photo1"></div>
+<div class="photo2"></div>
+<div class="photo3"></div>
+<div class="photo4"></div>
+</div>
+</body>
+</html>

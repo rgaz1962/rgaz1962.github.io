@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>responsive content</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+/*Global styles*/
+aside, article, section, header, footer, nav {
+	display: block;
+}
+h1, h2, h3, p, ul, li {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background: #ccc;
+}
+
+body {
+	background: #fff;
+	margin: 2em auto 2em;
+	font: 100% Arial, Helvetica, sans-serif;
+	padding: 25px;
+}
+
+div {
+	margin-bottom: 25px;
+	width: 50px;
+	height: 50px;
+	padding: 25px;
+}
+.menu li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #667F6A;
+	border-bottom: 1px dotted #667F6A;
+}
+.main {
+	overflow: hidden;
+	margin-top: 2em;
+}
+/*mobile styles*/
+@media only screen and (max-width:480px) {
+
+body {
+	width: 320px;
+}
+.banner {
+	width: 90%;
+	margin: 0 auto;
+}
+.banner h2 {
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	padding: 165px 0 0 0;
+	color: black;
+	text-align:center;
+	font-weight: normal;
+}
+.menu h2 {
+	font-size: 1em;
+	font-weight: normal;
+	margin-bottom: .5em;
+	color: black;
+	border-bottom: 1px solid black;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+}
+/*tablet styles*/
+@media only screen and (min-width:481px) and (max-width:768px) {
+body {
+	width: 80%;
+}
+.banner {
+	width: 90%;
+	margin: 0 auto;
+}
+.banner h2 {
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	padding: 125px 25px 0 0;
+	color: white;
+	text-align:right;
+	font-weight: normal;
+}
+.menu h2 {
+	font-size: 1.1em;
+	font-weight: normal;
+	margin-bottom: .5em;
+	color: #fff;
+	background: rgb(100, 98, 102);
+	padding: .5em;
+}
+.menu {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: .5em;
+}
+.menu a {
+	display:block;
+	padding-left: 16px;
+	border: none;
+	color: rgb(76, 67, 65);
+	line-height: 2em;
+	margin-bottom: 1px;
+}
+
+.menu li {
+	background: rgb(216, 213, 188);
+}
+
+.menu nav li:nth-child(even) {
+	background: rgb(237, 228, 214);
+}
+
+.menu a:hover {
+	color: #fff;
+	border:none;
+	background: rgb(100, 98, 102);
+}
+
+
+}
+
+/*desktop styles*/
+@media only screen and (min-width:769px) {
+
+body {
+	width: 70%;
+}
+.banner {
+	float: left;
+	width: 63%;
+}
+.banner h2 {
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	padding: 350px 25px 0 0;
+	color: white;
+	text-align:right;
+}
+	
+.menu h2 {
+	font-size: 1.1em;
+	font-weight: normal;
+	margin-bottom: .5em;
+	color: #fff;
+	background: rgb(100, 98, 102);
+	padding: .5em;
+}
+.menu {
+	float: right;
+	width: 35%;
+}
+.menu a {
+	display:block;
+	padding-left: 16px;
+	border: none;
+	color: rgb(76, 67, 65);
+	line-height: 2em;
+	margin-bottom: 1px;
+}
+
+.menu li {
+	background: rgb(216, 213, 188);
+}
+
+.menu nav li:nth-child(even) {
+	background: rgb(237, 228, 214);
+}
+
+.menu a:hover {
+	color: #fff;
+	border:none;
+	background: rgb(100, 98, 102);
+}
+
+
+}
+</style>
+</head>
+<body>
+<h1>Responsive Content</h1>
+<p>By taking advantage of Media Queries, you can make your content respond to changes in device, screen size, or orientation in creative and compelling ways. As you go through this exercise, try to think about how content, and the presentation of that content, should change based on the context of how the content is being viewed.</p>
+<section class="main">
+<section class="banner">
+<h2>Fine urban photography</h2>
+</section>
+<section class="menu">
+  <h2>Archived Galleries</h2>
+      <ul>
+        <li><a href="charlotte.htm" title="charlotte">Charlotte</a></li>
+        <li><a href="miami.htm" title="miami">Miami</a></li>
+        <li><a href="denver.htm" title="denver">Denver</a></li>
+        <li><a href="boston.htm" title="boston">Boston</a></li>
+        <li><a href="cincinnati.htm" title="cincinnati">Cincinnati</a></li>
+        <li><a href="lost_angeles.htm" title="los angeles">Los Angeles</a></li>
+        <li><a href="charleston.htm" title="charleston">Charleston</a></li>
+        <li><a href="dallas.htm" title="dallas">Dallas</a></li>
+        <li><a href="providence.htm" title="providence">Providence</a></li>
+        <li><a href="birmingham.htm" title="birmingham">Birmingham</a></li>
+        <li><a href="cleveland.htm" title="cleveland">Cleveland</a></li>
+        <li><a href="baltimore.htm" title="balitmore">Baltimore</a></li>
+      </ul>
+      <select>
+        <option value="charlotte.htm" selected>Charlotte</option>
+        <option value="miami.htm">Miami</option>
+        <option value="denver.htm">Denver</option>
+        <option value="boston.htm">Boston</option>
+        <option value="cincinnati.htm">Cincinnati</option>
+        <option value="los_angeles.htm">Los Angeles</option>
+        <option value="charleston.htm">Charleston</option>
+        <option value="dallas.htm">Dallas</option>
+        <option value="providence.htm">Providence</option>
+        <option value="birmingham.htm">Birmingham</option>
+        <option value="cleveland.htm">Cleveland</option>
+        <option value="baltimore.htm">Baltimore</option>
+      </select>
+    </nav>
+    </section>
+    </section>
+</body>
+</html>

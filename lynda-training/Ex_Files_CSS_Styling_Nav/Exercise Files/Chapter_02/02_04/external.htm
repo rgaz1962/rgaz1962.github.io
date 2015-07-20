@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>external links</title>
+<style>
+@font-face {
+    font-family: 'Modern';
+    src: url('_fonts/modernpics-webfont.eot');
+    src: url('_fonts/modernpics-webfont.eot?#iefix') format('embedded-opentype'),
+         url('_fonts/modernpics-webfont.woff') format('woff'),
+         url('_fonts/modernpics-webfont.ttf') format('truetype'),
+         url('_fonts/modernpics-webfont.svg#ModernPictogramsNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+	background: #E6E3D4;
+}
+body {
+	font: 100% Georgia, "Times New Roman", Times, serif;
+	line-height: 1.4;
+	width: 70%;
+	margin: 0 auto;
+}
+h1, h2, h3 {
+	font-size: 2.4em;
+	font-weight: normal;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+	color: #575451;
+}
+h2 {
+	font-size: 1.4em;
+}
+ul {
+	list-style: none;
+}
+li {
+	margin-bottom: 1em;
+}
+a {
+	color: #916226;
+	text-decoration: none;
+}
+a:hover {
+	color: #D5973C;
+	text-decoration: underline;
+}
+/*target external links*/
+</style>
+</head>
+<body>
+<h1>Indicating external links</h1>
+<p>Often, it's helpful to inform users when a link takes them away from your site. Typically this is accomplished  by using a small inline icon directly after the link. Although there are several styling techniques that allow you to do this, it's ideal to use a technique that allows the icon to scale along with the text.</p>
+<p>Icon fonts are an ideal solution, as they are sized by the same properties as the text they accompany. The downside to using icon fonts is they have accessibility issues, as non-informative text is added to the link.</p>
+<p>In this example I'm using <a href="http://thedesignoffice.org/project/modern-pictograms/" title="Modern Pictograms">Modern Pictograms</a>, by John Caserta. I'm using an attribute selector to filter external links and generated content to insert the appropriate icon.</p>
+<p>You can find Modern Pictograms and other icon fonts at <a href="http://www.fontsquirrel.com/" title="Find fonts at Font Squirrel">Font Squirrel</a>.</p>
+<p>For comparisons sake, this is an <a href="visit.htm">internal link</a>. </p>
+<p>This technique also works well when targeting <a href="_docs/Modern-License.doc">external resources</a>.</p>
+</body>
+</html>

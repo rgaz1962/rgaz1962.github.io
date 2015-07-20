@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>containing floats</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: rgb(108,135,178);
+}
+body {
+	width: 600px;
+	background: #fff;
+	margin: 0 auto;
+	font: 90% Georgia, "Times New Roman", Times, serif;
+}
+div {
+	width: 50px;
+	height: 50px;
+	padding: 50px;
+}
+section {
+	background: rgb(178,155,107);
+	border: 1px solid black;
+	padding: 10px;
+	float: left;
+	width: 580px;
+}
+.one {
+	background: rgb(207, 255, 245);
+	float: left; 
+}
+.two {
+	background: rgb(101,209,255);
+	float: left;
+}
+.three {
+	background: rgb(255, 231, 181);
+	float: left;
+}
+
+</style>
+</head>
+<body>
+<section>
+<div class="one">One</div>
+<div class="two">Two</div>
+<div class="three">Three</div>
+</section>
+</body>
+</html>

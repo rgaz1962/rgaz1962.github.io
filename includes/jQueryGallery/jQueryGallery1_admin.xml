@@ -1,0 +1,6 @@
+<albums gallery="jQueryGallery1" imagesFolder="includes/jQueryGallery/images/jQueryGallery1/">
+  <album name="Album 1" folder="album1" description="Enter a description for your album" thumbnail="albums/Thomas Bunk Bed-3-resized.jpg">
+    <image src="Thomas Bunk Bed-3-resized.jpg" title="Title 1" description="This is just an example text to serve as a placeholder for the subcaption area. Please replace it with your own text" alt="" url="" target="_self" thumbnail="thumb/Thomas Bunk Bed-3-resized.jpg" tooltip="tooltip/Thomas Bunk Bed-3-resized.jpg" fullscreen="fullscreen/Thomas Bunk Bed-3-resized.jpg"/>
+    <image src="Thomas Bunk Bed-resized.jpg" title="Title 2" description="This is just an example text to serve as a placeholder for the subcaption area. Please replace it with your own text" alt="" url="" target="_self" thumbnail="thumb/Thomas Bunk Bed-resized.jpg" tooltip="tooltip/Thomas Bunk Bed-resized.jpg" fullscreen="fullscreen/Thomas Bunk Bed-resized.jpg"/>
+  </album>
+</albums>

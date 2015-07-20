@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>vertical menu</title>
+<style>
+html {
+	background: #E6E3D4;
+}
+body {
+	font: 100% Georgia, "Times New Roman", Times, serif;
+	line-height: 1.4;
+	width: 70%;
+	margin: 0 auto;
+}
+h1, h2, h3 {
+	font-size: 2.4em;
+	font-weight: normal;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+	color: #575451;
+}
+h2 {
+	font-size: 1.4em;
+}
+/*vertical menu styles*/
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+li a {
+	display: block;
+	width: 8em;
+	line-height: 2em;
+	font-size: 1em;
+	text-decoration: none;
+	background:  #D5973C;
+	color: white;
+	padding: .2em 0 .2em 1em;
+}
+</style>
+</head>
+<body>
+<h1>Creating vertical menus</h1>
+<p>Vertical menus are relatively easy to create, as lists tend to display vertically by default. Typically, you&rsquo;ll want to start by stripping the default link styling and then defining the dimensions of the clickable area. This can be a little trickier than you think in some browsers. Because anchor elements are inline elements, some older browsers would limit the clickable area to the link content only, ignoring any additional box-model properties placed on the link. A good way to ensure that the clickable area is the desired dimension is to apply a <b>display</b> property of <b>block</b> to your menu links.</p>
+<p>
+Next you&rsquo;ll want to control vertical spacing between link elements, vertically center the content of links within the height of the links, and then add stylistic choices such as background colors, borders, or rollover effects.</p>
+<h2>Vertical menu example</h2>
+<ul>
+  <li><a href="home.htm" title="Home page">Home</a></li>
+  <li><a href="products.htm" title="browse our products">Products</a></li>
+  <li><a href="blog.htm" title="read our blog">Blog</a></li>
+  <li><a href="about.htm" title="More about us">About</a></li>
+  <li><a href="contact.htm" title="contact us">Contact</a></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>To Quote Buddha</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+<link rel="icon" type="image/png" href="iui/iui-favicon.png">
+<link rel="apple-touch-icon" href="iui/iui-logo-touch-icon.png" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<script src="SpryAssets/SpryData.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryHTMLDataSet.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMasterDetail.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+var ds1 = new Spry.Data.HTMLDataSet("quote.html", "quotes", {sortOnLoad: "LeadIn", sortOrderOnLoad: "ascending"});
+ds1.setColumnType("Quote", "html");
+	</script>
+<link rel="stylesheet" href="iui/iui.css" type="text/css" />
+<link rel="stylesheet" title="Default" href="iui/t/default/default-theme.css"  type="text/css"/>
+<link rel="stylesheet" href="css/iui-panel-list.css" type="text/css" />
+<script type="application/x-javascript" src="iui/iui.js"></script>
+</head>
+<body>
+
+<div class="toolbar">
+  <h1 id="pageTitle"></h1>
+  <a id="backButton" class="button" href="#"></a> </div>
+<ul id="home" title="To Quote..." selected="true">
+  <li><a href="#quotes">Buddha's Quotes</a></li>  
+
+  <li><a href="#bio">Buddha's Bio</a></li>
+  <li><a href="#about">About</a></li>
+</ul><br /><br /><br />
+
+
+<div id="quotes" class="panel">
+  <h2>Buddha's Quotes</h2>
+  <span spry:region="ds1" class="listClass">
+    <ul id="quotes" selected="true" >
+      <li spry:repeat="ds1" spry:setrow="ds1" ><a href="#quote">{LeadIn}</a></li>
+    </ul><br /><br /><br />
+  </span>
+</div>
+
+
+
+<div id="quote" class="panel">
+    <div spry:detailregion="ds1" class="DetailContainer">
+  <h2>{LeadIn}</h2>
+
+    <p class="DetailColumn">{Quote}</p>
+    <br>
+    <p class="DetailColumn">Author: {Author}</p><br /><br /><br />
+  </div>
+</div>
+
+
+
+
+<div id="bio" class="panel">
+  <h2>The History Of Buddha</h2>
+<p class="DetailColumn">
+<p>Siddhartha Gautama was a spiritual teacher from ancient India who founded Buddhism. In most Buddhist traditions, he is regarded as the Supreme Buddha (P. sammāsambuddha, S. samyaksaṃbuddha) of our age, "Buddha" meaning "awakened one" or "the enlightened one."  The time of his birth and death are uncertain: most early 20th-century historians dated his lifetime as c. 563 BCE to 483 BCE, but more recent opinion may be dating his death to between 411 and 400 BCE.
+</P>
+<p>Gautama, also known as Sākyamuni ("Sage of the Sakyas"), is the primary figure in Buddhism, and accounts of his life, discourses, and monastic rules are believed by Buddhists to have been summarized after his death and memorized by his followers. Various collections of teachings attributed to him were passed down by oral tradition, and first committed to writing about 400 years later.	
+	</p>
+<p class="DetailColumn">Source: Wikipeadia.org</p><br /><br /><br />
+
+</div>
+
+<div id="about" class="panel">
+  <h2>About</h2>
+<p class="DetailColumn">"To Quote Buddha" is a MAD Learning education app designed for parents by parents</p>
+<p align="center"><a href="mailto:info@madlearning.net">info@madlearning.net</a></p>
+<p align="center"><a href="http://www.madlearning.net" target="_blank">www.madlearning.net</a></p>
+
+</body>
+</html>

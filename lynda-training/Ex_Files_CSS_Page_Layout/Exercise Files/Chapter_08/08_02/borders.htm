@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Creative borders</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background: #ccc;
+}
+
+body {
+	width: 800px;
+	background: #fff;
+	margin: 2em auto 2em;
+	font: 100% Arial, Helvetica, sans-serif;
+	padding: 25px;
+}
+
+div {
+	margin-bottom: 25px;
+	width: 50px;
+	height: 50px;
+	padding: 25px;
+}
+
+pre {
+	font-size: 1.2em;
+	padding: 1em .5em;
+	background: rgb(216,233,204);
+	border-bottom: 2px solid #666;
+	line-height: 1.6;
+}
+
+section {
+	margin: 1em 0;
+}
+
+section h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.6em;
+	margin-top: 0;
+	margin-bottom: .5em;
+	font-weight: normal;
+	font-variant: small-caps;
+	letter-spacing: .1em;
+}
+
+section h3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.4em;
+	margin-bottom: .7em;
+	font-weight: normal;
+}
+
+/*column rule styles*/
+.col1 {
+	width: 460px;
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: justify;
+}
+
+.col2 {
+	width: 260px;
+	padding-right: 20px;
+	padding-left: 20px;
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+/*inset border styles*/
+.inset {
+	clear: both;
+	background: rgb(35,35,35);
+	padding: 20px;
+	width: 500px;
+}
+
+.inset h2 {
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-variant: normal;
+	font-weight: normal;
+}
+
+.inset ul {
+	width: 300px;
+	padding: 0;
+	padding-right: 20px;
+	list-style: none;
+}
+
+.inset ul li {
+	
+}
+
+.inset ul li:first-child {
+	border-top: none;
+}
+
+.inset ul li:last-child {
+	border-bottom: none;
+}
+
+.inset ul li a {
+	padding: 15px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+
+.inset ul li a:hover {
+	background: rgb(25,25,25);
+}
+/*shadow box styles*/
+.box {
+	position: relative;
+	z-index:1;
+	width: 480px;
+	background: rgb(48,43,42);
+	color: white;
+	padding: 30px;
+	line-height: 1.6;
+}
+.box:after {
+	
+}
+.box h2 {
+	font-weight: normal;
+	font-variant: normal;
+	font-size: 1.4em;
+}
+</style>
+</head>
+<body>
+<h1>Enhancing page design with borders</h1>
+<p>The border property is an incredibly versatile way of enhancing various aspects of page design. Borders can be use to create paragraph rules, column and menu separators, image frames, and as a way to bring attention to specific page elements. As with most properties, how you choose to utilize borders within your design depends largely on your skill at using the border property in new and creative ways and your design aesthetic. I encourage you to continually experiment with CSS and push it in new and interested directions.</p>
+<section class="columnRule">
+  <section class="col1">
+    <h2>Aristotle</h2>
+    <p>All men by nature desire to know. An indication of this is the delight we take in our senses; for even apart from their usefulness they are loved for themselves; and above all others the sense of sight. For not only with a view to action, but even when we are not going to do anything, we prefer seeing (one might say) to everything else. The reason is that this, most of all the senses, makes us know and brings to light many differences between things.
+    <p>
+    <p>By nature animals are born with the faculty of sensation, and from sensation memory is produced in some of them, though not in others. And therefore the former are more intelligent and apt at learning than those which cannot remember; those which are incapable of hearing sounds are intelligent though they cannot be taught, e.g. the bee, and any other race of animals that may be like it; and those which besides memory have this sense of hearing can be taught.</p>
+  </section>
+  <section class="col2">
+    <h2>More on animals</h2>
+    <p>The animals other than man live by appearances and memories, and have but little of connected experience; but the human race lives also by art and reasonings. Now from memory experience is produced in men; for the several memories of the same thing produce finally the capacity for a single experience. </p>
+  </section>
+</section>
+<section class="inset">
+  <h2>Inset borders</h2>
+  <ul>
+    <li><a href="charlotte.htm" title="charlotte">Charlotte</a></li>
+    <li><a href="miami.htm" title="miami">Miami</a></li>
+    <li><a href="denver.htm" title="denver">Denver</a></li>
+    <li><a href="boston.htm" title="boston">Boston</a></li>
+    <li><a href="cincinnati.htm" title="cincinnati">Cincinnati</a></li>
+  </ul>
+</section>
+<section class="box">
+<h2>Shadow box effect</h2>
+<p>Put some text in me! I'm a shadow-box! I'd be great for a really important quote, or maybe the soup of the day. Yes... the soup. I wonder, perhaps Lobster Bisque? I'm an old-school kind of soup guy... maybe some Vegetable Beef. Okay, maybe not soup. You could put all sorts of stuff in here. It's just begging for important content.</p>
+</section>
+</body>
+</html>

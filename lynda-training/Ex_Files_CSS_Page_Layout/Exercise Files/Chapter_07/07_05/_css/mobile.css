@@ -1,0 +1,44 @@
+body {
+		width: 320px;
+}
+pre {
+	font-size: 1em;
+	padding: .5em; 
+	white-space: -moz-pre-wrap !important; 
+ 	white-space: -pre-wrap;
+ 	white-space: -o-pre-wrap; 
+	white-space: pre-wrap;  
+ 	word-wrap: break-word; 
+}
+.photos {
+	background: rgb(136,176,195);
+	padding:10px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	width: 220px;
+	margin: 0 auto;
+}
+.photo1 {
+	background: url(../_images/ny_01_sm) no-repeat;
+	width: 200px;
+	height: 200px;
+	margin: 10px 10px 20px;
+}
+.photo2 {
+	background: url(../_images/ny_02_sm) no-repeat;
+	width: 200px;
+	height: 200px;
+	margin:10px 10px 20px;
+}
+.photo3 {
+	background: url(../_images/ny_03_sm) no-repeat;
+	width: 200px;
+	height: 200px;
+	margin:10px 10px 20px;
+}
+.photo4 {
+	background: url(../_images/ny_04_sm) no-repeat;
+	width: 200px;
+	height: 200px;
+	margin: 10px 10px 20px;
+}

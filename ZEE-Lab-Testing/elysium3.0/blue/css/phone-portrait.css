@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	max-width: 480px;
+	min-width:320px;
+	width: 100%;
+	background-color: hsl(180,100%,60%);	
+}
+
+.span2 logo {
+	img: 320px;
+	margin: 0 auto;
+	background-color: hsl(180,33%,70%);
+	border: 5px dotted hsl(0,100%,50%);
+}
+
+#sequence {
+	display: none;
+	
+}
+
+#logo {
+	/*display: none;*/
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;	
+}
+
+.menu {
+	display: none;	
+}
+
+#header {
+	display: none;
+		
+}
+
+img.prev {
+	display: none;	
+
+}
+
+img.next {
+	display: none;
+	}
+	
+#dg-container {
+	display: none;
+}
+
+.span3 textbox {
+	display: block;
+	width: 100%;
+	float: left;
+}
+
+.news {
+	width: 100%;	
+}

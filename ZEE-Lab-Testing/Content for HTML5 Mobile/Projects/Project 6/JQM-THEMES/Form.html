@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Swatch Sample</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" />
+<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
+</head>
+
+<body>
+<div data-role="page" id="page" data-theme="e">
+  <div data-role="header">
+    <h1>Header</h1>
+  </div>
+  <div data-role="content">
+
+
+<div data-role="fieldcontain">
+    <label for="name">Text Input:</label>
+    <input type="text" name="name" id="name" value=""  />
+
+	<label for="slider">Select slider:</label>
+	<select name="slider" id="slider" data-role="slider">
+		<option value="off">Off</option>
+		<option value="on">On</option>
+	</select> 
+
+	<label for="slider">Input slider:</label>
+ 	<input type="range" name="slider" id="slider" value="0" min="0" max="100"  />
+
+ 	<fieldset data-role="controlgroup">
+		<legend>Agree to the terms:</legend>
+		<input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
+		<label for="checkbox-1">I agree</label>
+    </fieldset>
+</div>
+</p> 
+<div data-role="collapsible-set">
+      <div data-role="collapsible">
+        <h3>Header</h3>
+        <p>Content</p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>Header</h3>
+        <p>Content</p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>Header</h3>
+        <p>Content</p>
+      </div>
+    </div>
+    </p>
+<p>&nbsp;<a href="#" data-role="button" data-icon="arrow-d" data-iconpos="left">Button</a></p>
+  </div>
+  <div data-role="footer">
+    <h4>Footer</h4>
+  </div>
+</div>
+</body>
+</html>

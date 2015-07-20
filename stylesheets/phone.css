@@ -1,0 +1,116 @@
+/* ----------------------- MAIN LAYOUT CSS ------------------------------ */
+
+html { 
+	overflow-y:auto;
+	min-height:auto;
+}
+
+header .menu-container {
+	text-align:center;
+	color:#666666;
+	font-size:14px;
+	line-height:100%;
+	
+	min-height:40px;
+	width:80px;
+	float:right;
+	display:block;
+}
+
+header .menu-container a {
+	display: block;
+	float: none;
+	padding: 10px 10px 11px;
+	line-height: 19px;
+	text-decoration: none;
+}
+
+header .logo {
+  min-height:40px;
+  margin: 0 150px 0 5px;
+  float:none;
+}
+
+header h3 {
+  font-size: 1.3em;
+}
+
+header .logo h3 a,
+header .logo h3 a:hover,
+header .logo h3 a:active,
+header .logo h3 a:visited {
+  padding-top: 0;
+}
+
+header a.corner-menu {
+	color: #bfbfbf;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+header a.corner-menu:hover,
+header li.active a.corner-menu {
+	background-color: #333;
+	background-color: rgba(255, 255, 255, 0.05);
+	color: #ffffff;
+	text-decoration: none;
+}
+
+header a.corner-menu {
+	display:block;
+	width:40px;
+	height:19px;
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:30px;
+	text-align:center;
+	border-bottom: 1px solid #CCC;
+	text-decoration:none;
+	font-weight:bold;
+	background:#222222 url("/images/mobile/drop-down-arrow.png") no-repeat 55px center;
+}
+
+header .floating-menu {
+	width:150px;
+	right:0px;
+	margin:0;
+	padding:0 15px 15px 0;
+	position:absolute; 
+	display:none; 
+	background-color:#222;
+	border-bottom: 1px solid #CCC;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	z-index: 100;
+}
+
+header .floating-menu ul {
+	list-style:none;
+	text-align:right;
+	margin:0;
+	padding:0;
+	width:100%;
+	float:none;
+}
+
+header .floating-menu ul li {
+	height:20px;
+	padding-top:10px;
+	margin:0;
+	display:block;
+	float:none;
+	width:auto;
+}
+
+header .floating-menu ul li a, 
+header .floating-menu ul li a:hover, 
+header .floating-menu ul li a:visited, 
+header .floating-menu ul li a:active {
+	color:#FFF;
+	font-size:14px;
+	height:20px;
+	display:block;
+	padding-right:15px;
+	margin:0;
+	text-align:right;
+	text-decoration:none;
+}

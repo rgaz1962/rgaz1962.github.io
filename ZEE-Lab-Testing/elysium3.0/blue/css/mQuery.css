@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+
+
+
+/* phone-landscape */
+@import url("/elysium3.0/blue/css/phone.css") only screen and (min-width:321px) and (max-width:480px);
+/* phone-portrait */
+@import url("/elysium3.0/blue/css/phone-portrait.css") only screen and (max-width:320px);
+/* tablet-landscape */
+@import url("/elysium3.0/blue/css/tablet-landscape.css") only screen and (min-width:768px) and (max-width:1010px);
+/* tablet-portrait */
+@import url("/elysium3.0/blue/css/tablet-portrait.css") only screen and (min-width:750px) and (max-width:920px);
+/* desktop-laptop */
+@import url("/elysium3.0/blue/css/desktop-laptop.css") only screen and (min-width:1024px) and (max-width:1600px);
+/* desktop-xl */
+@import url("/elysium3.0/blue/css/desktop-xl.css") only screen and (min-width:1921px) and (max-width:2560px);
+/*Hi-Res*/
+@import url("hi-res.css") only screen and ( -webkit-min-device-pixel-ration: 2),
+only screen (-moz-min-device-pixel: 2)
+only screen and (min-device-pixel-ration: 2)
+
+
+
+
+
+

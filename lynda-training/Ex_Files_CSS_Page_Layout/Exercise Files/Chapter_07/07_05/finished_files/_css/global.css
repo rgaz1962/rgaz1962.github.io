@@ -1,0 +1,167 @@
+/*global styles*/
+aside, article, section, header, footer, nav {
+	display: block;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: #ccc;
+}
+body {
+	width: 960px;
+	background: #fff;
+	margin: 2em auto 2em;
+	font: 100% Arial, Helvetica, sans-serif;
+	padding: 25px;
+}
+
+pre {
+	background: rgb(216,233,204);
+	border-bottom: 2px solid #666;
+	line-height: 1.6;
+}
+
+
+
+/*mobile styles*/
+@media only screen and (max-width:480px) {
+body {
+		width: 320px;
+}
+pre {
+	font-size: 1em;
+	padding: .5em; 
+	white-space: -moz-pre-wrap !important; 
+ 	white-space: -pre-wrap;
+ 	white-space: -o-pre-wrap; 
+	white-space: pre-wrap;  
+ 	word-wrap: break-word; 
+}
+.photos {
+	background: rgb(136,176,195);
+	padding:10px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	width: 220px;
+	margin: 0 auto;
+}
+.photo1 {
+	background: url(../_images/ny_01_sm) no-repeat;
+	width: 200px;
+	height: 200px;
+	margin: 10px 10px 20px;
+}
+.photo2 {
+	background: url(../_images/ny_02_sm) no-repeat;
+	width: 200px;
+	height: 200px;
+	margin:10px 10px 20px;
+}
+.photo3 {
+	background: url(../_images/ny_03_sm) no-repeat;
+	width: 200px;
+	height: 200px;
+	margin:10px 10px 20px;
+}
+.photo4 {
+	background: url(../_images/ny_04_sm) no-repeat;
+	width: 200px;
+	height: 200px;
+	margin: 10px 10px 20px;
+}
+}
+/*tablet styles*/
+@media only screen and (min-width:481px) and (max-width:768px) {
+	body {
+		width: 700px;
+}
+pre {
+	font-size: 1.2em;
+	padding: 1em .5em;
+}
+.photos {
+	background: rgb(136,176,195);
+	padding:10px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	width: 420px;
+	margin: 0 auto;
+}
+.photo1 {
+	background: url(../_images/ny_01_big) no-repeat;
+	width: 400px;
+	height: 400px;
+	margin: 10px;
+	float: left;
+}
+.photo2 {
+	background: url(../_images/ny_02_big) no-repeat;
+	width: 400px;
+	height: 400px;
+	margin:10px;
+	float: left;
+}
+.photo3 {
+	background: url(../_images/ny_03_big) no-repeat;
+	width: 400px;
+	height: 400px;
+	margin:10px;
+	float: left;
+}
+.photo4 {
+	background: url(../_images/ny_04_big) no-repeat;
+	width: 400px;
+	height: 400px;
+	margin: 10px;
+	float: left;
+}
+}
+/*desktop styles*/
+@media only screen and (min-width:769px) {
+	body {	
+		width: 960px;
+}
+pre {
+	font-size: 1.4em;
+	padding: 2em;
+}
+.photos {
+	background: rgb(136,176,195);
+	padding:10px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	width: 840px;
+	margin: 0 auto;
+}
+.photo1 {
+	background: url(../_images/ny_01_big) no-repeat;
+	width: 400px;
+	height: 400px;
+	margin: 10px;
+	float: left;
+}
+.photo2 {
+	background: url(../_images/ny_02_big) no-repeat;
+	width: 400px;
+	height: 400px;
+	margin:10px;
+	float: left;
+}
+.photo3 {
+	background: url(../_images/ny_03_big) no-repeat;
+	width: 400px;
+	height: 400px;
+	margin:10px;
+	float: left;
+}
+.photo4 {
+	background: url(../_images/ny_04_big) no-repeat;
+	width: 400px;
+	height: 400px;
+	margin: 10px;
+	float: left;
+}
+}
+

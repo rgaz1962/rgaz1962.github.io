@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- TemplateBeginEditable name="doctitle" --><title>My Website</title><!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+    
+    <link href="/stylesheets/base.css" type="text/css" rel="stylesheet" />
+    <link href="/stylesheets/skeleton.css" type="text/css" rel="stylesheet" />
+    <link href="/stylesheets/layout.css" type="text/css" rel="stylesheet" />
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  </head>
+  <body>
+    
+    <header class="page">
+      <div class="container">
+        <div class="sixteen columns logo">
+          <h3><a href="/">My Website</a></h3>
+          
+          <div class="menu full">
+          
+            <!-- you can edit the menu from "_System/ContentHolders/menu.html" -->
+            {module_contentholder,name="menu"}
+
+          </div>
+          
+          <div class="menu dropdown">
+            <ul>
+              <li><a href="#">Menu</a>
+              
+                <!-- you can edit the menu from "_System/ContentHolders/menu.html" -->
+                {module_contentholder,name="menu"}
+              
+              </li>
+            </ul>
+          </div>
+        
+        </div>
+      </div>
+    </header>
+    
+    <div class="container">
+      <!-- TemplateBeginEditable name="ContentArea" -->{tag_pagecontent}<!-- TemplateEndEditable -->
+    </div>
+    
+    <footer class="container">
+      <div class="sixteen columns">
+        <nav role="navigation">
+          
+          <!-- you can edit the menu from "_System/ContentHolders/menu.html" -->
+          {module_contentholder,name="menu"}
+        
+        </nav>		
+        <p>Copyright © 2012 Company Co. All rights reserved.</p>
+      </div>
+    </footer>
+
+    
+    <!-- Scripts moved at the end for a faster page rendering -->
+    
+    <script src="/javascripts/menu.js"></script>
+    
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.menu.dropdown ul li').click(function(){
+           $(this).find('ul').toggle();
+        });
+      });
+    </script>
+
+  </body>
+</html>

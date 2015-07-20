@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>horizontal menu</title>
+<style>
+html {
+	background: #E6E3D4;
+}
+body {
+	font: 100% Georgia, "Times New Roman", Times, serif;
+	line-height: 1.4;
+	width: 70%;
+	margin: 0 auto;
+}
+h1, h2, h3 {
+	font-size: 2.4em;
+	font-weight: normal;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+	color: #575451;
+}
+h2 {
+	font-size: 1.4em;
+}
+/*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/*/
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
+/*horizontal menu styles*/	
+nav {
+	background: red;
+}
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+</style>
+</head>
+<body>
+<h1>Creating horizontal menus</h1>
+<p>Horizontal menus require a little more effort than vertical menus to style, but for the most part use the same techniques. You&rsquo;ll want to start off with an ordered or unordered list. Using CSS, strip the default list styling and all the margins and padding associated with both the list element and all list items. This is often taken care of by a CSS reset, but can be done individually for menus as well. Next, you&rsquo;ll want to either <b>float</b> the list items or change their display property to <b>inline</b> in order to get them to display horizontally. Which technique you use is largely a matter of personal preference, but floating the list items allows them to retain their box model properties, which can be extremely useful for specific styling needs. </p>
+<p>Once the menu items are horizontal, it&rsquo;s really just a matter of styling preferences that will determine the menu&rsquo;s look and feel. You can apply backgrounds and dimensions to the parent list element, or confine the styling to the actual links themselves. Defining a set height for the parent list item, and then setting the line-height of the links to the same value allows you to vertically center link text within the horizontal menu. Using the parent link element for backgrounds gives you a little more flexibility when styling rollovers or more complex menus as well, which makes it a widely used method of styling horizontal menus.</p>
+<h2>Horizontal menu example</h2>
+<nav class="cf">
+<ul>
+  <li><a href="home.htm" title="Home page" class="current">Home</a></li>
+  <li><a href="products.htm" title="browse our products">Products</a></li>
+  <li><a href="blog.htm" title="read our blog">Blog</a></li>
+  <li><a href="about.htm" title="More about us">About</a></li>
+  <li><a href="contact.htm" title="contact us">Contact</a></li>
+</ul>
+</nav>
+</body>
+</html>

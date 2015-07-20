@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<head>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/menu.css" rel="stylesheet" type="text/css">
+
+<title>Contact Us</title>
+
+</head>
+
+<body>
+
+	<header id="header" class="headerStyle" >
+		<form method="get" action="http://www.google.com/search">
+		<input type="text"   name="q" size="15" maxlength="255" value="" placeholder="Search" />
+		<input type="submit" value="GO" />
+		<input type="hidden"  name="sitesearch" value="www.focalpress.com" />
+		</form>
+	</header>
+
+<section id="navigation" class="leftSection">
+<p id="CompanyName" class="companyNameStyle">COMPANY NAME</p>
+<navigation id="NavigationLink" style="" class="navigationStyle">
+    <section class="menu">
+      <ul>
+        <li><a class="left_nosub" href="default.html">Home</a></li>
+        <li><a class="center_hassub" href="products/products.html">Products</a>
+          <ul>
+            <li><a href="products/project.html">Current Projects</a></li>
+            <li><a href="products/clients.html">Clients</a></li>
+            <li><a href="products/archives.html">Archives</a></li>
+            <li><a href="products/ideas.html">Submit An Idea</a></li>
+          </ul>
+        </li>
+        <li><a class="center_hassub" href="news/news.html">News</a>
+          <ul>
+            <li><a href="news/article.html">Articles</a></li>
+            <li><a href="news/timeline.html">Timeline</a></li>
+          </ul>
+        </li>
+        <li><a class="right_nosub" href="contactUs.html">Contact Us</a></li>
+      </ul>
+    </section>
+</navigation>
+</section>
+
+
+
+
+
+
+<section>
+<div id="section_articleOneIdentifier" class="sectionOne" /><hr class="hrStyle"></div>
+<article id="article_one" style="position: absolute; left: 420px; top: 100px; width: 315px; height: 550px; z-index: 2">
+<h1>Contact Us</h1>
+<p>For more information, contact us:</p>
+<form method="POST" action="http://fp1.formmail.com/cgi-bin/fm192">
+<input type="hidden" name="_pid" value="119137">
+<input type="hidden" name="_fid" value="FNNZXGED">
+<input type="hidden" name="recipient" value="matthewadavid@gmail.com">
+<label>First Name: </label><br /><input name= "FirstName" type="text" autofocus required> <br /><br />
+<label>Middle Name: </label><br /><input name="MiddleName" type="text" disabled><- disabled <br /><br />
+<label>Last Name: </label><br /><input name="LastName" type="text" maxlength="25" required> <br /><br />
+<label>Age: </label><br /><input name="age" type="number" min="18" max="100"><br /><br />
+<label>Email: </label><br /><input name="email" type="email" required><br /><br />
+<label>How Did you hear about us: </label><br /><input name="HowDidYouHear" type="uri" list="mylist"><br /><br />
+<datalist id="mylist">
+<option label="google" value="http://google.com">
+<option label="yahoo" value="http://yahoo.com">
+<option label="Bing" value="http://bing.com">
+</datalist>
+<label>When would you like us to contact you:  </label><br /><input name="ContactDate" type="date"><br /><br />
+<label>How many of our products do you own: </label><br /><input id="slider" name="sliderValue" type="range" min="0" max="10" value="5"> </input>
+<output name="NumberOfProducts"  value="5" onforminput="value=sliderValue.value"  >5</output><br /><br />
+<button type=submit>Submit</button>
+</form>
+</article>
+</section>
+
+
+
+
+<footer id="footer" class="footerStyle" style="">
+	<hr class="HRstyle" />
+	<p class="Copyright">Copyright © 2010 Focal Press</p>
+	</footer>
+
+
+</body>
+
+</html>
+
+</html>

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#header {
+	background-color: hsl(315,100%,60%);
+}
+
+body {
+	background-color: hsl(200,100%,70%)
+}

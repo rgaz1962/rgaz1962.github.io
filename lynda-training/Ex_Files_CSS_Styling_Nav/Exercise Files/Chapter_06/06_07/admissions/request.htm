@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Information Request</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="../_scripts/respond.min.js"></script>
+<![endif]-->
+<link href="../_css/main.css" rel="stylesheet" media="screen, projection">
+</head>
+<body>
+<header class="admissionHeader pageHeader">
+<h1>Roux Academy of Art and Design<a href="/index.htm" title="home"></a></h1>
+<nav id="pageNav" class="cf">
+  <ul>
+    <li><a href="../programs/programs.htm" title="programs">Programs</a></li>
+    <li><a href="admissions.htm" title="admissions" class="current">Admissions</a></li>
+    <li><a href="../student_portal.htm" title="student portal">Student Portal</a></li>
+    <li><a href="../campus_portal.htm" title="campus portal">Campus</a></li>
+    <li><a href="../alumni/alumni.htm" title="alumni">Alumni</a></li>
+    <li><a href="../about/about.htm"  title="about Roux Academy">About</a></li>
+  </ul>
+</nav>
+</header>
+<article id="mainContent">
+  <h1>Information Request</h1>
+  <p>Interested in becoming a student at Roux? Please complete and submit the following form to the Admissions Office. One of our representatives will send you an information package tailored to the field(s) of study that interest you. Please indicate whether you would like additional information on the financial aid options available or if you would be interested in one of our regularly scheduled campus tours.</p>
+  <form action="requestConfirm.htm" method="post" name="frmRequest" id="frmRequest">
+    <fieldset>
+      <legend>Personal information</legend>
+      <ul class="formList">
+      <li>
+        <label for="name" class="text">Name</label>
+        <input type="text" name="name" id="name" tabindex="10">
+      </li>
+      <li>
+        <label for="email" class="text">Email</label>
+        <input type="email" name="email" id="email" tabindex="20">
+      </li>
+      <li>
+        <label for="address" class="text">Address</label>
+        <input type="text" name="address" id="address" tabindex="30">
+      </li>
+      <li>
+        <label for="city" class="text">City</label>
+        <input type="text" name="city" id="city" tabindex="40">
+      </li>
+      <li>
+        <label for="state" class="text">State</label>
+        <select name="state" id="state" tabindex="50">
+<option value="" selected="selected">- select</option> 
+<option value="AL">Alabama</option> 
+<option value="AK">Alaska</option> 
+<option value="AZ">Arizona</option> 
+<option value="AR">Arkansas</option> 
+<option value="CA">California</option> 
+<option value="CO">Colorado</option> 
+<option value="CT">Connecticut</option> 
+<option value="DE">Delaware</option> 
+<option value="DC">District Of Columbia</option> 
+<option value="FL">Florida</option> 
+<option value="GA">Georgia</option> 
+<option value="HI">Hawaii</option> 
+<option value="ID">Idaho</option> 
+<option value="IL">Illinois</option> 
+<option value="IN">Indiana</option> 
+<option value="IA">Iowa</option> 
+<option value="KS">Kansas</option> 
+<option value="KY">Kentucky</option> 
+<option value="LA">Louisiana</option> 
+<option value="ME">Maine</option> 
+<option value="MD">Maryland</option> 
+<option value="MA">Massachusetts</option> 
+<option value="MI">Michigan</option> 
+<option value="MN">Minnesota</option> 
+<option value="MS">Mississippi</option> 
+<option value="MO">Missouri</option> 
+<option value="MT">Montana</option> 
+<option value="NE">Nebraska</option> 
+<option value="NV">Nevada</option> 
+<option value="NH">New Hampshire</option> 
+<option value="NJ">New Jersey</option> 
+<option value="NM">New Mexico</option> 
+<option value="NY">New York</option> 
+<option value="NC">North Carolina</option> 
+<option value="ND">North Dakota</option> 
+<option value="OH">Ohio</option> 
+<option value="OK">Oklahoma</option> 
+<option value="OR">Oregon</option> 
+<option value="PA">Pennsylvania</option> 
+<option value="RI">Rhode Island</option> 
+<option value="SC">South Carolina</option> 
+<option value="SD">South Dakota</option> 
+<option value="TN">Tennessee</option> 
+<option value="TX">Texas</option> 
+<option value="UT">Utah</option> 
+<option value="VT">Vermont</option> 
+<option value="VA">Virginia</option> 
+<option value="WA">Washington</option> 
+<option value="WV">West Virginia</option> 
+<option value="WI">Wisconsin</option> 
+<option value="WY">Wyoming</option>
+        </select>
+      </li>
+      </ul>
+    </fieldset>
+    <fieldset class="study">
+      <legend>Areas of study</legend>
+      <ul>
+        <li>
+          <label for="program" class="text">Program(s) of Interest</label>
+          <select name="program" multiple id="program" tabindex="60">
+            <option value="animation">Animation</option>
+            <option value="fashion">Fashion + Textile Design</option>
+            <option value="film">Filmmaking</option>
+            <option value="fine">Fine Art + Visual Culture</option>
+            <option value="graphic">Graphic Design</option>
+            <option value="interior">Interior Design</option>
+            <option value="photo">Photography</option>
+            <option value="product">Product Design</option>
+          </select>
+        </li>
+        <li class="group">If you would like information regarding our financial aid programs, please check the one(s) that apply to you:</li>
+        <li>
+          <input type="checkbox" name="in" id="in" tabindex="70">
+          <label for="in">New York Resident</label><br>
+          <input type="checkbox" name="fsa" id="fsa" tabindex="80">
+          <label for="fsa">Federal Student Aid</label> 
+          <br>
+          <input type="checkbox" name="scholarship" id="scholarship" tabindex="90">
+          <label for="scholarship">Scholarship Programs</label><br>
+          <input type="checkbox" name="loans" id="loans" tabindex="100">
+          <label for="loans">Student Loan Programs</label>
+        </li>
+        <li class="group">Would you like to schedule a campus tour?</li>
+        <li>
+            <label>
+              <input type="radio" name="tour" value="yes" id="tour_0" tabindex="110">
+              yes</label><br>
+            <label>
+              <input type="radio" name="tour" value="no" id="tour_1" tabindex="120">
+              not at this time</label>
+        </li>
+        <li>
+          <label for="comments" class="text">Additional comments</label>
+          <textarea name="comments" id="comments" tabindex="130"></textarea>
+        </li>
+        <li>
+          <input type="submit" name="submit" id="submit" value="Request Info" tabindex="140">
+          <br>
+        </li>
+      </ul>
+    </fieldset>
+  </form>
+</article>
+<aside>
+<section class="academic info">
+<h2>Academic Links</h2>
+<ul>
+  <li><a href="../programs/undergraduate.htm" title="undergraduate degrees">Undergraduate Degrees</a></li>
+  <li><a href="../programs/graduate.htm" title="Graduate Degrees">Graduate Degree Programs</a></li>
+  <li><a href="../programs/continuing-education.htm" title="Continuing education">Continuing Education</a></li>
+  <li><a href="../programs/faculty.htm" title="Faculty">Faculty Profiles</a></li>
+   <li><a href="../programs/application-requirement.htm" title="Application requirements">Application Requirements</a></li>
+  <li><a href="../programs/study-abroad.htm" title="Study abroad programs">Study Abroad Programs</a></li>
+  <li><a href="../programs/internships.htm" title="Internship programs">Internship Programs</a></li>
+  <li><a href="../programs/calendar.htm" title="Academic calendar">Academic Calendar</a></li>
+</ul>
+</section>
+<section class="connect info">
+<h2>Connect with us</h2>
+<ul>
+  <li><a href="http://www.twitter.com/rouxacademy" title="Follow us!" target="_blank" class="twitter">Twitter</a></li>
+  <li><a href="https://plus.google.com/" title="Google Plus" target="_blank" class="google">Google Plus</a></li>
+  <li><a href="http://facebook.com" title="Be our friend" target="_blank" class="facebook">Facebook</a></li>
+  <li><a href="http://www.linkedin.com" title="Let's connect" target="_blank" class="linked">LinkedIn</a></li>
+</ul>
+</section>
+<section class="find info">
+<h2>Find out more</h2>
+<ul>
+<li><a href="../tour.htm" title="Take a campus tour">Take a campus tour</a></li>
+<li><a href="../catalog.htm" title="course catalog">Download a course catalog</a></li>
+<li><a href="../admissions.htm" title="Apply now">Apply now</a></li>
+</ul>
+</section>
+<section class="show info">
+<h2>Current Show</h2>
+<img src="../_images/show1.jpg" width="285" height="230" alt="Current show">
+<p>Join us on May 11th for the opening reception of Ceramic Currency, an annual show presented by graduates from the Craft and Design program. Come see an exhibition of contemporary pottery and ceramic sculpture by over 30 artists. <a href="../programs/current_show.htm" title="current show" class="more">more info</a></p>
+</section>
+</aside>
+<footer id="pageFooter" class="cf">
+<nav class="footerNav">
+<section class="col">
+<h3>About Roux Academy</h3>
+  <div class="col1">
+  <ul>
+  <li><a href="../mission.htm" title="Our mission">Mission Statement</a></li>
+  <li><a href="../history.htm" title="school history">School History</a></li>
+  <li><a href="../accreditation.htm" title="accreditation and affliates">Accreditation &amp; Affiliates</a></li>
+  <li><a href="../board.htm" title="board members">Board Members</a></li>
+  </ul>
+  </div>
+  <div class="col2">
+  <ul>
+  <li><a href="../faculty.htm" title="faculty and staff">Faculty &amp; Staff</a></li>
+  <li><a href="../visiting_professors.htm" title="visiting professors">Visiting Professors</a></li>
+  <li><a href="../museum.htm" title="Maribielle Roux Museum">Marbielle Roux Museum</a></li>
+  <li><a href="../directions.htm" title="directions">Map &amp; Directions</a></li>
+  </ul>
+  </div>
+</section>
+<section class="col">
+<h3>Admissions &amp; Programs</h3>
+  <div class="col1">
+  <ul>
+  <li><a href="../degrees.htm" title="Degree programs">Degree Programs</a></li>
+  <li><a href="../catalog.htm" title="course catalog">Course Catalog</a></li>
+  <li><a href="../fine_art.htm" title="fine art programs">Fine Art Programs</a></li>
+  <li><a href="../design.htm" title="design concentration">Design Concentration</a></li>
+  </ul>
+  </div>
+  <div class="col2">
+  <ul>
+  <li><a href="../fashion.htm" title="fashion program">Fashion Program</a></li>
+  <li><a href="../product_design.htm" title="product design">Product Design</a></li>
+  <li><a href="../continuing_ed.htm" title="Continuing Education">Continuing Education</a></li>
+  <li><a href="../financial_aid.htm" title="tuition and financial aid">Tuition &amp; Financial Aid</a></li>
+  </ul>
+  </div>
+</section>
+<section class="col">
+<h3>Student Resources</h3>
+  <div class="col1">
+  <ul>
+  <li><a href="../campus.htm" title="Campus information">Campus Information</a></li>
+  <li><a href="../housing.htm" title="student housing">Student Housing</a></li>
+  <li><a href="../contact.htm" title="transcript request">Transcript Request</a></li>
+  <li><a href="../applying.htm" title="application process">Application Process</a></li>
+  </ul>
+  </div>
+  <div class="col2">
+  <ul>
+  <li><a href="../portfolio_review.htm" title="portfolio review">Portfolio Review</a></li>
+  <li><a href="../conselling.htm" title="career counselling">Career Counselling</a></li>
+  <li><a href="../internships.htm" title="internship programs">Internship Programs</a></li>
+  <li><a href="../student_portal.htm" title="student portal login">Student Portal Login</a></li>
+   </ul>
+  </div>
+</section>
+</nav>
+<p>&copy;Copyright  Roux Academy of Art &amp; Design.  All rights reserved.<a href="../privacy.htm" title="privacy statement"> Privacy Statement</a> |<a href="../legal.htm" title="legal terms"> Legal Terms and Conditions</a> |<a href="../disclosures.htm" title="student outcomes and disclosures"> Student Outcomes/Disclosures</a></p>
+</footer>
+</body>
+</html>

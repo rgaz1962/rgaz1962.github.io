@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Link states</title>
+<style>
+html {
+	background: #E6E3D4;
+}
+body {
+	font: 100% Georgia, "Times New Roman", Times, serif;
+	line-height: 1.4;
+	width: 70%;
+	margin: 0 auto;
+}
+h1, h2, h3 {
+	font-size: 2.4em;
+	font-weight: normal;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+	color: #575451;
+}
+h2 {
+	font-size: 1.4em;
+}
+ul {
+	list-style: none;
+}
+li {
+	margin-bottom: 1em;
+}
+
+</style>
+</head>
+<body>
+<h1>Styling link states</h1>
+<p>CSS allows us to style various states of links by using what are known as pseudo-class selectors. Pseudo-class selectors allow us to select elements based on properties such as links states or user interactions.</p>
+<h2>Dynamic pseudo-class examples</h2>
+<ul>
+<li><a id="anchor">Anchor element with no href</a></li>
+<li><a href="visit.htm" class="link">:link targets unvisited links with an <strong>href</strong> attribute</a></li>
+<li><a href="visit.htm" class="visited">:visited targets visited links</a></li>
+<li><a href="visit.htm" class="hover">:hover targets links when hovered over</a></li>
+<li><a href="." class="active">:active targets currently active links</a></li>
+<li><a href="." class="focus">:focus targets links that have focus</a></li>
+</ul>
+</body>
+</html>

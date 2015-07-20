@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css buttons</title>
+<style>
+html {
+	background: #E6E3D4;
+}
+
+body {
+	font: 100% Georgia, "Times New Roman", Times, serif;
+	line-height: 1.4;
+	width: 70%;
+	margin: 0 auto;
+}
+
+h1, h2, h3 {
+	font-size: 2.4em;
+	font-weight: normal;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+	color: #575451;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+.button {
+	background: rgb(2, 99, 174);
+	color: white;
+	padding: 0 1em;
+	height: 2.4em;
+	display: table;
+	border: 1px solid rgb(32, 124, 202);
+	font-family: Helvetica, sans-serif;
+	font-weight: 100;
+	font-size: 1em;
+	text-transform: lowercase;
+	letter-spacing: .045em;
+	line-height: 2.4em;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	cursor: pointer;
+	border-radius: .325em;
+	-webkit-box-shadow:inset 0px 1px 3px rgb(162,200,229);
+	box-shadow:inset 0px 1px 3px rgb(162,200,229);
+}
+.button:hover {
+	
+}
+.button:active, .button:focus {
+	
+}
+</style>
+</head>
+<body>
+<h1>Creating pure CSS buttons</h1>
+<p>Creating custom buttons for forms and navigation used to be a very painful process. Typically it involved having to create custom images and either using a single, non-scalable image, or slicing images up and combining them using non-semantic markup. Thankfully, new capabilities in CSS and improvements in browser support now allow us to style custom buttons with pure CSS.</p>
+<p>This allows us to create buttons that will scale along with other page content, look great on high-resolution displays, and save on both bandwidth and http requests. While exactly how a button is styled is up to the designer, usually it involves properties such as background colors, gradients, box-shadows, text-shadows, and border-radius. </p>
+<h2>Form submit button:
+</h2>
+<form name="frmRegister" method="post" action="">
+  <input type="submit" name="submit" id="submit" value="Register" class="button">
+</form>
+<h2>Call to action link:</h2>
+<p><a href="." title="Add to cart" class="button">Add to cart</a></p>
+</body>
+</html>

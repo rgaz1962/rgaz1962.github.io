@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS Sprites</title>
+<style>
+html {
+	background: #E6E3D4;
+}
+
+body {
+	font: 100% Georgia, "Times New Roman", Times, serif;
+	line-height: 1.4;
+	width: 70%;
+	margin: 0 auto;
+	padding-bottom: 20em;
+}
+
+h1, h2, h3 {
+	font-size: 2.4em;
+	font-weight: normal;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+	color: #575451;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+/*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/*/
+/* For modern browsers */
+.cf:before, .cf:after {
+	content:"";
+	display:table;
+}
+
+.cf:after {
+	clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+	zoom:1;
+}
+/*horizontal menu styles*/	
+nav {
+	background: #916A31;
+	height: 2.3em;
+}
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+ul {
+	background: #D5973C;
+	height: 2em;
+	width: 100%;
+}
+li {
+	position: relative;
+	margin-right: 2em;
+	margin-left: 1em;
+}
+li a {
+	display: block;
+	line-height: 2em;
+	padding: 0 1em;
+	color: white;
+	text-decoration: none;
+}
+li a:hover, .topmenu li:hover > a {
+	background: #916A31;
+	height: 2em;
+	padding-top: .3em;
+	position: relative;
+	top: -.3em;
+	border-radius: .3em .3em 0 0;
+}
+.current a, .current a:hover, .topmenu li.current:hover a {
+	background: #AD9B7F;
+	color: #eee;
+	padding-top: .3em;
+	border-radius: .3em .3em 0 0;
+	position: relative;
+	top: -.3em;
+	border-bottom: .3em solid #917F63;
+	cursor: default;
+}
+/*icon styles*/
+
+
+/*dropdown menu styles*/
+ul.submenu {
+	float: none;
+	background: #916A31;
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 2em;
+	left: -9000em;
+	max-height: 0;
+	-moz-transition:max-height 0.5s ease-in-out;
+	-webkit-transition:max-height 0.5s ease-in-out;
+	-o-transition:max-height 0.5s ease-in-out;
+	transition:max-height 0.5s ease-in-out;
+	overflow: hidden;
+}
+ul.submenu li {
+	float: none;
+}
+.topmenu li:hover ul {
+	left: 0;
+	max-height: 10em;
+}
+ul.submenu li a {
+	border-bottom: 1px solid white;
+	padding: .2em 1em;
+	white-space: nowrap;
+}
+ul.submenu li:last-child a {
+	border-bottom: none;
+}
+ul.submenu li a:hover {
+	background: #D5973C;
+	height: 2em;
+	padding-top: .2em;
+	top: 0;
+	border-radius: 0;
+}
+</style>
+</head>
+<body>
+<h1>CSS Sprites</h1>
+<p>CSS Sprites allow us to reduce the overhead that icons and images typically add to sites. While they are not right for every project or image, they do add a valuable option for adding icons and other images to our site navigation. Sprites work by assembling multiple images into a single image. Images are spaced so that you can easily reference them in your CSS and exported to the desired image format as a single file.</p>
+<p>To use sprites, you add the sprite image to the desired element by using the background-image property. Padding is added to the element to allow the image to display without the text overlapping, and then the background-image is positioned so that the appropriate image displays. For rollovers or other elements, the same image is used with the appropriate background-image positioning to reveal the desired image.</p>
+<p>When using sprites, you should take care to make sure you have enough space around the individual images within the sprite to account for any padding or element height and width without displaying other images within the sprite. It’s also important to space images evenly, so that the values required to position each of the images is easier to arrive at. It’s also worth noting that the http savings they give you can be offset by the size of the sprite. If the sprite image grows too large, it could actually add more overhead than using separate images.</p>
+<h2>CSS Sprites used for icons</h2>
+<nav class="cf">
+  <nav class="cf">
+    <ul class="topmenu">
+      <li class="current"><a href="home.htm" title="Home page" class="home">Home</a></li>
+      <li><a href="products.htm" title="browse our products" class="products">Products</a>
+        <ul class="submenu">
+          <li><a href="laptops.htm" title="laptops">Laptops</a></li>
+          <li><a href="tablets.htm" title="tablets">Tablets</a></li>
+          <li><a href="phones.htm" title="smartphones">Smartphones</a></li>
+          <li><a href="accessories.htm" title="accessories">Accessories</a></li>
+        </ul>
+      </li>
+      <li><a href="blog.htm" title="read our blog" class="blog">Blog</a>
+        <ul class="submenu">
+          <li><a href="recent.htm" title="recent articles">Recent articles</a></li>
+          <li><a href="archive.htm" title="archives">Archives</a></li>
+          <li><a href="hall.htm" title="favorite articles">Hall of fame</a></li>
+        </ul>
+      </li>
+      <li><a href="about.htm" title="More about us" class="about">About</a></li>
+      <li><a href="contact.htm" title="contact us" class="contact">Contact</a>
+        <ul class="submenu">
+          <li><a href="service.htm" title="customer service">Customer service</a></li>
+          <li><a href="register.htm" title="register for an account">Register</a></li>
+          <li><a href="support.htm" title="technical support">Technical support</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</nav>
+</body>
+</html>
+
+
+
+<!--
+li a.blog {
+	background-position: 2px -296px;
+}
+li a.blog:hover, .topmenu li:hover > a.blog {
+	background-position: 2px -291px;
+}
+.current a.blog, .current a:hover.blog, .topmenu li.current:hover a.blog {
+	background-position: 2px -371px;
+}
+li a.about {
+	background-position: 2px -447px;
+}
+li a.about:hover, .topmenu li:hover > a.about {
+	background-position: 2px -442px;
+}
+.current a.about, .current a:hover.about, .topmenu li.current:hover a.about {
+	background-position: 2px -522px;
+}
+li a.contact {
+	background-position: 2px -596px;
+}
+li a.contact:hover, .topmenu li:hover > a.contact {
+	background-position: 2px -591px;
+}
+.current a.contact, .current a:hover.contact, .topmenu li.current:hover a.contact {
+	background-position: 2px -670px;
+}
+-->

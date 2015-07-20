@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>border-radius</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: #ccc;
+}
+body {
+	width: 700px;
+	background: #fff;
+	margin: 2em auto 2em;
+	font: 100% Arial, Helvetica, sans-serif;
+	padding: 25px;
+}
+section {
+	width: 250px;
+	background: rgb(237,226,197);
+	padding: 30px;
+	height: 300px;
+}
+</style>
+</head>
+<body>
+<h1>Border-radius</h1>
+<p>The border-radius property allows us to specify rounded corners on our elements. It can accept <strong>&lt;length&gt;</strong> | <strong>&lt;percentage&gt;</strong>  values. If a single value is used, all corners are rounded equally. For multiple values, the<strong> TL</strong> is first specified, followed by <strong>TR</strong>, <strong>BR</strong>, &amp; <strong>BL</strong>. If 2 or 3 values are used the opposite corner is used to define the missing value.
+<p>You can also use syntax for each individual side such as <strong>border-top-left-radius</strong> to define TL individually.</p>
+<section>
+<p>round my corners, please.</p>
+</section>
+</body>
+</html>

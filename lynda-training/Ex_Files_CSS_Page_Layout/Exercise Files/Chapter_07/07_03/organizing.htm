@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>OrganizingMedia Queries</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background: #ccc;
+}
+
+body {
+	background: #fff;
+	margin: 2em auto 2em;
+	font: 100% Arial, Helvetica, sans-serif;
+	padding: 25px;
+}
+
+/*styles that change*/
+body {
+ width: 700px;
+}
+
+pre {
+	font-size: 1.2em;
+	padding: 1em .5em;
+	background: rgb(216,233,204);
+	border-bottom: 2px solid #666;
+	line-height: 1.6;
+}
+
+</style>
+</head>
+<body>
+<h1>Media Queries</h1>
+<p>Media queries allow you to determine which styles are applied to pages based on the presence or absence of specific media properties such as screen width, color, or resolution. It's essentially a way of extending the current media declaration.
+<p>
+<p>The basic syntax is this: </p>
+<pre>link rel="stylesheet" href="desktop.css" 
+media="[not | only ] screen [and] (expression)"</pre>
+<p><strong>Not</strong> and <strong>only</strong> are keywords that can be used to check for a negative return on the expression (<strong>not</strong>), or hide the media query from older user agents (<strong>only</strong>).</p>
+<p>The <strong>and</strong> keyword allows us to constrain the application of styles to the conditions of the expression that follows it. The <strong>expression</strong> allows you to test specific media feature values and determine if the styles should be applied. For example, the following media query would limit the styles to apply to only screen devices that had a screen width of greater than 720px.
+<p>
+<pre>media="only screen and (min-width:720px)"</pre>
+<p>We have a wide range of media features to test for including <strong>width</strong>, <strong>height</strong>, <strong>device-width</strong>, <strong>device-height</strong>, <strong>orientation</strong>, <strong>aspect-ratio</strong>, <strong>device-aspect-ratio</strong>, <strong>color</strong>, <strong>color-index</strong>, <strong>monochrome</strong>, <strong>resolution</strong>, <strong>scan</strong>, and <strong>grid</strong>. Length values, like width, can be expanded by adding the <strong>min-</strong> or <strong>max-</strong> prefix.</p>
+</body>
+</html>

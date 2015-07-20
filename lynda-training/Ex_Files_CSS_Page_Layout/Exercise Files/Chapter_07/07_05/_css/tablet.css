@@ -1,0 +1,43 @@
+body {
+		width: 700px;
+}
+pre {
+	font-size: 1.2em;
+	padding: 1em .5em;
+}
+.photos {
+	background: rgb(136,176,195);
+	padding:10px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	width: 420px;
+	margin: 0 auto;
+}
+.photo1 {
+	background: url(../_images/ny_01_big) no-repeat;
+	width: 400px;
+	height: 400px;
+	margin: 10px;
+	float: left;
+}
+.photo2 {
+	background: url(../_images/ny_02_big) no-repeat;
+	width: 400px;
+	height: 400px;
+	margin:10px;
+	float: left;
+}
+.photo3 {
+	background: url(../_images/ny_03_big) no-repeat;
+	width: 400px;
+	height: 400px;
+	margin:10px;
+	float: left;
+}
+.photo4 {
+	background: url(../_images/ny_04_big) no-repeat;
+	width: 400px;
+	height: 400px;
+	margin: 10px;
+	float: left;
+}

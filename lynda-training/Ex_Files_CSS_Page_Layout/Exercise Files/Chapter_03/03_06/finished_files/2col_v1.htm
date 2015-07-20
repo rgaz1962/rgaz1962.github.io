@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>2 column layout</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: rgb(123, 121, 143);
+}
+body {
+	width: 960px;
+	background: #fff;
+	margin: 0 auto 2em;
+	font: 100% Georgia, "Times New Roman", Times, serif;
+}
+header {
+	background: rgb(76, 67, 65);
+	margin-bottom: 20px;
+}
+header h1 {
+	font: normal 2em Arial, Helvetica, sans-serif;
+	color: white;
+	text-align: center;
+	line-height: 4em;
+	text-transform: uppercase;
+	letter-spacing:.1em;
+	margin: 0;
+}
+.col1 {
+	background: rgb(237, 228, 214);
+	height: 500px;
+	float: left;
+	padding: 20px;
+	width: 600px;
+}
+.col2 {
+	background: rgb(173, 169, 130);
+	height: 500px;
+	padding: 20px;
+	margin-left: 660px;
+}
+footer {
+	background: rgb(100, 98, 102);
+	line-height: 3em;
+	font-size: .6em;
+	color: white;
+	padding: 0 2em;
+	clear: both;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Cool company header</h1>
+</header>
+<section class="col1">
+This is where the really important stuff goes.
+</section>
+<aside class="col2">
+This is where the related content goes.
+</aside>
+<footer>Copyright stuff....</footer>
+</body>
+</html>

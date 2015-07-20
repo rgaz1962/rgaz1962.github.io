@@ -1,0 +1,40 @@
+/*global styles*/
+aside, article, section, header, footer, nav {
+	display: block;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: #ccc;
+}
+body {
+	width: 960px;
+	background: #fff;
+	margin: 2em auto 2em;
+	font: 100% Arial, Helvetica, sans-serif;
+	padding: 25px;
+}
+
+pre {
+	background: rgb(216,233,204);
+	border-bottom: 2px solid #666;
+	line-height: 1.6;
+}
+
+
+
+/*mobile styles
+@media only screen and (max-width:480px) {
+
+}
+tablet styles
+@media only screen and (min-width:481px) and (max-width:768px) {
+	
+}
+desktop styles
+@media only screen and (min-width:769px) {
+	
+}
+*/

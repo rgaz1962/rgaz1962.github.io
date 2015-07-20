@@ -1,0 +1,164 @@
+/*
+    Groundswell web site CSS
+    CSS Positioning version
+    by Bill Weinman
+    developed for CSS Positioning course at lynda.com
+*/
+
+/* ===== global styles ===== */
+
+body {
+    font-family: Georgia, serif;
+    background: #bbb url(../images/page_background.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6, li {
+    margin: 1ex 1em;
+}
+
+#outerDiv {
+    width: 770px;
+    margin: 0 auto;
+    background: #fff url(../images/banner.jpg) no-repeat;
+}
+
+/* ===== header ===== */
+
+#header {
+    height: 110px;
+    position: relative;
+}
+
+/* ===== contact link ===== */
+
+#contactButton {
+    position: absolute;
+    left: 650px;
+    top: 0;
+}
+
+#contactButton a {
+    height: 29px;
+    width: 86px;
+    display: block;
+    background: url(../images/GroundswellSprites.png) 0px 0px;
+    border: none;
+}
+
+#contactButton a:hover, #contactButton a:active {
+    background-position: 0px -29px;
+}
+
+/* ===== main menu ===== */
+
+#mainMenu {
+    position: absolute;
+    left: 320px;
+    bottom: 0;
+}
+
+#mainMenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#mainMenu li {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#mainMenu a {
+    font-family: "Trebuchet MS", sans-serif;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px 0 30px;
+    margin-right: 10px;
+    line-height: 25px;
+    background: url(../images/GroundswellSprites.png) -286px -25px;
+    border: none;
+}
+
+#mainMenu a:hover {
+    color: #f8b449;
+    background-position: -286px 0;
+}
+
+#mainMenu a.current {
+    margin-top: -5px;
+    height: 30px;
+    background-position: -86px 0px ;
+    color: #aaa;
+    line-height: 25px;
+}
+
+#mainMenu a.current:hover {
+    cursor: default;
+}
+
+/* ===== main content ===== */
+
+#mainContent {
+    float: left;
+    width: 430px;
+    margin: 0 0;
+    padding: 0 15px;
+}
+
+#mainContent p {
+    font-size: 0.9em;
+    line-height: 1.4em;
+    color: black;
+    margin: 1ex 0;
+}
+
+#mainContent h1, #mainContent h2, #mainContent h3, #mainContent h4 {
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+#mainContent h1 {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #1b9d95;
+    margin: 0 0 .4ex 0;
+}
+
+/* ===== sideBar ===== */
+
+#sideBar {
+    float: right;
+    width: 265px;
+    padding: 0 10px;
+    margin: 0;
+    border-left: solid #aaa 1px;
+}
+
+#sideBar p {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 0.8em;
+    line-height: 1.2em;
+    color: #666;
+    margin: 0 0 3ex 0;
+}
+
+#sideBar h3 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #1b9d95;
+    text-align: left;
+    margin: 1ex 0 .5ex 0;
+}
+
+/* ===== miscellaneous styles ===== */
+
+.clear {
+    clear: both;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+

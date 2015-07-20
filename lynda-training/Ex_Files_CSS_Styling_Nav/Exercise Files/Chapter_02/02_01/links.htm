@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Styling links</title>
+<style>
+html {
+	background: #E6E3D4;
+}
+body {
+	font: 100% Georgia, "Times New Roman", Times, serif;
+	line-height: 1.4;
+	width: 70%;
+	margin: 0 auto;
+}
+h1, h2, h3 {
+	font-size: 2.4em;
+	font-weight: normal;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+	color: #575451;
+}
+h2 {
+	font-size: 1.4em;
+}
+.obvious {
+	color: blue;
+}
+.obvious a {
+	text-decoration: none;
+	color: rgb(0,51,204);
+	font-weight: bold;
+}
+a.contrast {
+	text-decoration: underline;
+	font-weight: normal;
+	color: rgb(102,51,0);
+}
+a.contrast:hover {
+	text-decoration: none;
+	color: rgb(255,153,51);
+}
+.no-ul {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+.add-ul {
+	text-decoration: underline;
+}
+.fake-link {
+	color: rgb(0,51,255);
+	text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<h1>Link styling</h1>
+<p>Site navigation is a critical component of any website, so it makes sense that you should put a lot of thought into planning and styling your site&rsquo;s links. Let&rsquo;s explore a few of the concepts that you should keep in mind as you style links on your site.</p>
+<h2>Make them obvious</h2>
+<p>This kind of goes without saying…right? Yet, one of the most common errors in styling links is that the links are changed so drastically that no one can tell they&rsquo;re links! True, very few sites have a design aesthetic that works with <a href=".">underlined blue text</a>, but the goal of styling links isn&rsquo;t getting as far away from the default styling as possible, it&rsquo;s to make links obvious!</p>
+<p>Consider this text: <span class="obvious">Which part of this text is the <a href=".">link</a>? Is it obvious when compared with other text that is <strong>emphasized</strong> within the same body copy? Link styling should be unique and it should stand out from the text around it. <a href="." class="contrast">Like this, for example</a>.</span></p>
+<h2>Think through underlines</h2>
+<p>Many designers&rsquo; initial impulse is to remove the default underline for links. While in certain cases this may look better, it&rsquo;s not always the right choice. Underlining linked text is a long-held convention, and users have been conditioned to see underlined text as a link. For example, which of these sections of text is a link: <a href="." class="no-ul">This one</a> or <span class="add-ul">this one</span>? Before removing underlines, make sure you have sound reason for doing so. Replacing underlines with borders can be effective, but keep in mind that borders are part of the element&rsquo;s box model, and can often effect layout in unintended ways. </p>
+<p>Conversely, you should never underline text that is not a link, and especially not style text as blue and underlined unless it&rsquo;s a link. Users will expect it to be a link, and can become confused, or assume that something isn&rsquo;t working. When it turns out to be.</p>
+<p class="fake-link">How frustrating am I? I look like a link, but I&rsquo;m not!!</p>
+<h2>Don&rsquo;t take away focus</h2>
+<p>By default, browsers use the CSS outline property to show when focus has been established on a link. For multiple reasons many designers and popular CSS resets remove this default :focus styling. There&rsquo;s nothing wrong with that, as long as there is a compelling reason for removing the styling based on the site&rsquo;s design. However, if it&rsquo;s removed it should be restored in a way that fits with the site&rsquo;s design. Removing the focus link styling makes the site less accessible to those that are browsing your page without a mouse. Certain user agents and assistive devices allow users to tab through a page&rsquo;s links (in fact, almost all browsers allow this too, give it a try). If focus styling is removed, there is no way for these users to tell which link they&rsquo;re focusing on.</p>
+<h2>Consider contrast</h2>
+<p>Keep in mind that many visitors to your site experience some form of color blindness. Not only should you think about how colors contrast when you plan your links, you should also think about ways to visually identify links without using color (yet another case for keeping underlines). There are some great online resources that can test your designs&rsquo; effectiveness for people that are color blind and allow you to compare the effectiveness of certain color choices.</p>
+<ul>
+  <li><a href="http://colorfilter.wickline.org" title="Color blind filter for websites">Colorblind Web Page Filter</a> allows you to test sites against certain forms of color blindness</li>
+  <li><a href="http://www.vischeck.com" title="Vischeck color blindness test">Vischeck</a> allows you to compare colors and test websites</li>
+  <li><a href="http://colorvisiontesting.com" title="More on color blindness">Color Vision Testing</a> is a great resource to learn more about color blindness</li>
+</p>
+  </ul>
+<h2>Keep it simple</h2>
+<p>It&rsquo;s trite but true; keep link styles simple. Links should be consistent throughout your site, and styling should reflect the purpose of the link. Styling a link&rsquo;s states (hover, active, visited, and focus) can help users identify and utilize links, but they can also distract from a link&rsquo;s effectiveness if they&rsquo;re overdone.
+</p>
+<p>
+  While you can certainly modify any CSS property you wish, most effective link styles work with a narrow set of properties. Here are the most common properties used for link styles:</p>
+<ul>
+  <li>background</li>
+  <li>border</li>
+  <li>color</li>
+  <li>font-weight</li>
+  <li>font-style</li>
+  <li>text-decoration</li>
+</ul>
+<p>Not a huge list, but certainly enough variety to create clear and concise styling for your links.</p>
+</body>
+</html>

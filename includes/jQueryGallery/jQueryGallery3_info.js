@@ -1,0 +1,1 @@
+{"skin":"skin01","colorscheme":"default","isCustomSkin":false,"instanceID":"xtd_jQueryGalleryPlus10"}

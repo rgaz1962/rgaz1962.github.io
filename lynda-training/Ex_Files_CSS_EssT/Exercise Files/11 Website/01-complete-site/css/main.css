@@ -1,0 +1,342 @@
+/*
+    Groundswell web site CSS
+    CSS Positioning version
+    by Bill Weinman
+    developed for CSS Positioning course at lynda.com
+*/
+
+/* ===== global styles ===== */
+
+body  {
+    font-family: Georgia, serif;    /* default page font */
+    background: #bbb url(../images/page_background.jpg);
+    margin: 0;          /* shorthand for all margins = 0 */
+    padding: 0;         /* no padding */
+}
+
+p, h1, h2, h3, h4, h5, h6, li {
+    margin: 1ex 1em;
+}
+
+#outerDiv {
+    width: 770px;       /* sets the content width */
+    margin: 0 auto;     /* no top/bottom margin, centered horizontally */
+    background: #fff url(../images/banner.jpg) no-repeat;       /* white content background, header image */
+}
+
+a {
+    text-decoration: none;
+    color: #b36b00;
+}
+
+a:hover, a:active {
+    color: #566440;
+    border-bottom: 1px dashed #566440;
+}
+
+/* ===== header ===== */
+
+#header {
+    height: 110px;          /* set size equal to banner image */
+    position: relative;     /* allow absolute positioning relative to this space */
+                            /* (used for menus below) */
+}
+
+#midBanner {
+    height: 90px;
+}
+
+/* the content portion of the page */
+
+#content {
+    background-color: #fff;
+    padding: 5px;
+}
+
+/* ===== contact link ===== */
+
+#contactButton {
+    position: absolute;
+    left: 650px;
+    top: 0;
+}
+
+#contactButton a {
+    height: 29px;
+    width: 86px;
+    display: block;
+    background: url(../images/GroundswellSprites.png) 0px 0px;
+    border: none;
+}
+
+#contactButton a:hover {
+    background-position: 0px -29px;
+}
+
+/* ===== main menu ===== */
+
+#mainMenu {
+    position: absolute;
+    left: 320px;
+    bottom: 0;
+}
+
+#mainMenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#mainMenu li {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#mainMenu a {
+    font-family: "Trebuchet MS", sans-serif;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px 0 30px;
+    margin-right: 10px;
+    line-height: 25px;
+    background: url(../images/GroundswellSprites.png) -286px -25px;
+    border: none;
+}
+
+#mainMenu a:hover {
+    color: #f8b449;
+    background-position: -286px 0;
+}
+
+#mainMenu a.current {
+    margin-top: -5px;
+    height: 30px;
+    background-position: -86px 0px ;
+    color: #aaa;
+    line-height: 25px;
+}
+
+#mainMenu a.current:hover {
+    cursor: default;
+}
+
+/* ====- main content ===== */
+
+#mainContent {
+    float: left;
+    width: 430px;
+    margin: 0 0;
+    padding: 0 15px;
+}
+
+#mainContent p {
+    font-size: 0.9em;
+    line-height: 1.4em;
+    color: black;
+    margin: 1ex 0;
+}
+
+#mainContent h1, #mainContent h2, #mainContent h3, #mainContent h4 {
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+#mainContent h1 {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #1b9d95;
+    margin: 0 0 .4ex 0;
+}
+
+#mainContent h2 {
+    font-size: 1.2em;
+    color: #3c3809;
+    margin: .4ex 0;
+}
+
+#mainContent h4 {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #666;
+    margin: 1ex 0 -.2ex 0;
+}
+
+#mainContent ul {
+    font-size: 0.9em;
+    margin: 0 0 1.4ex 0;
+}
+
+#youtubeVid {
+    margin: 2ex 0 2ex 1em;
+}
+
+/* ====== main content left menu ====== */
+
+#mainContent .leftMenu {
+    font-family: "Trebuchet MS", sans-serif;
+    margin-top: 0;
+}
+
+#mainContent .leftMenu a {
+    color: #566440;
+}
+
+#mainContent .leftMenu a:hover {
+    color: #b36b00;
+    border: none;
+}
+
+/* ===== gear subnav ===== */
+
+#gearSubNav {
+    width: 340px;
+    margin: 0 auto;
+    list-style: none;
+    }
+
+#gearSubNav li {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#gearSubNav a {
+    display: block;
+    width: 70px;
+    height: 20px;
+    font-family: "Orator Std", Orator, sans-serif;
+    font-size: .9em;
+    text-align: center;
+    padding-top: 100px;     /* make room for the image */
+    margin-right: 20px;
+    border: none;
+    background: url(../images/GroundswellSprites.png);
+}
+
+#gearSubNav a.last {
+        margin-right: 0;
+}
+
+/* ===== gear subnav icons ===== */
+
+#gearSubNav a.boards { background-position: -490px -60px; }
+#gearSubNav a.swimwear { background-position: -210px -60px; }
+#gearSubNav a.wetsuits { background-position: -70px -60px; }
+#gearSubNav a.etc { background-position: -350px -60px; }
+
+#gearSubNav a.boards:hover { background-position: -420px -60px; }
+#gearSubNav a.swimwear:hover { background-position: -140px -60px; }
+#gearSubNav a.wetsuits:hover { background-position: -0px -60px; }
+#gearSubNav a.etc:hover { background-position: -280px -60px; }
+
+/* ===== gear sales box ===== */
+
+#gearFloatingImage {
+    float: left;
+    padding: 15px;
+}
+
+#gearDesc {
+    float: right;
+    width: 260px;
+    padding-top: 20px;
+}
+
+#gearDesc h3 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.2em;
+    color: #C47500;
+    border-bottom: 1px solid #344;
+    padding-bottom: 0.2em;
+    margin: 0;
+}
+
+#gearDesc p {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: .8em;
+}
+
+#gearDesc p.price {
+    text-align: right;
+    font-size: 1.2em;
+}
+
+/* ===== sidebar ===== */
+
+#sideBar {
+    float: right;
+    width: 265px;
+    padding: 0 10px;
+    margin: 0;
+    border-left: solid #aaa 1px;
+}
+
+#sideBar p {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 0.8em;
+    line-height: 1.2em;
+    color: #666;
+    margin: 0 0 3ex 0;
+}
+
+#sideBar h3 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #1b9d95;
+    text-align: left;
+    margin: 1ex 0 .5ex 0;
+}
+
+#sideBar img {
+    margin: 0 25px;
+}
+
+#sideBar img.photo {
+    padding: 5px;
+    border: 1px solid #999;
+}
+
+#sideBar ol {
+    margin: .5em 0 1.5em 0 ;
+}
+
+#sideBar li {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 0.8em;
+    color: #666;
+    margin: .2em .5em;
+}
+
+/* ===== footer ===== */
+
+#footer {
+    clear: both;
+    background: transparent;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+#footer p {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: .75em;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#footer a {
+    color: #1b9d95;
+    text-decoration: none;
+}
+
+/* ===== miscellaneous styles ===== */
+
+.clear {
+    clear: both;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+

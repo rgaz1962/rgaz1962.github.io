@@ -1,0 +1,10 @@
+<albums gallery="Ballard" imagesFolder="includes/jQueryGallery/images/Ballard/">
+  <album name="portrait" folder="portrait" description="portrait test" thumbnail="includes/jQueryGallery/albumsThumbnails/portrait-test-001 - Copy.jpg">
+    <image src="portrait-test-001.jpg" title="Title 1" description="This is just an example text to serve as a placeholder for the subcaption area. Please replace it with your own text" alt="" url="" target="_self"/>
+    <image src="portrait-test-002.jpg" title="Title 2" description="This is just an example text to serve as a placeholder for the subcaption area. Please replace it with your own text" alt="" url="" target="_self"/>
+    <image src="portrait-test-003.jpg" title="Title 3" description="This is just an example text to serve as a placeholder for the subcaption area. Please replace it with your own text" alt="" url="" target="_self"/>
+    <image src="portrait-test-004.jpg" title="Title 4" description="This is just an example text to serve as a placeholder for the subcaption area. Please replace it with your own text" alt="" url="" target="_self"/>
+    <image src="portrait-test-005.jpg" title="Title 5" description="This is just an example text to serve as a placeholder for the subcaption area. Please replace it with your own text" alt="" url="" target="_self"/>
+    <image src="portrait-test-006.jpg" title="Title 6" description="This is just an example text to serve as a placeholder for the subcaption area. Please replace it with your own text" alt="" url="" target="_self"/>
+  </album>
+</albums>

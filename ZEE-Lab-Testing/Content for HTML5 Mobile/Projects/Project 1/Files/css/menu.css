@@ -1,0 +1,142 @@
+ @font-face {
+ font-family: 'SansationRegular';
+ src: url('fonts/Sansation_Regular.eot');
+ src: local('Sansation'), local('Sansation'), url('fonts/Sansation_Regular.woff') format('woff'), url('fonts/Sansation_Regular.ttf') format('truetype'), url('fonts/Sansation_Regular.svg#Sansation') format('svg');
+}
+/* -- Black Menu -- */
+.menu {
+	font-family: SansationRegular;
+	position:relative;
+	font-size:11px;
+	margin: 0;
+	z-index:1000;
+}
+.menu ul li a {
+	display:block;
+	text-decoration:none;
+	color:#f0f0f0;
+	font-weight:bold;
+	width:81px;
+	height:42px;
+	text-align:center;
+	border-bottom: 0;
+	background-image:url('../images/black/center.png');
+	line-height:48px;
+	font-size:11px;
+	overflow:hidden;
+	padding-left: 1px;
+}
+/* End Caps Styling */
+.menu .left_nosub {
+	background-image:url('../images/black/left.png');
+	padding-left: 1px;
+	margin-right: -1px;
+}
+.menu .right_hassub {
+	background-image:url('../images/black/right.png');
+}
+.menu .right_nosub {
+	background-image:url('../images/black/right.png');
+}
+.menu ul {
+	padding:0;
+	margin:0;
+	list-style: none;
+}
+.menu ul li {
+	float:left;
+	position:relative;
+}
+.menu ul li ul {
+	display: none;
+}
+/* Button ":hover" Styling */
+.menu ul li:hover a {
+	color:#000;
+	background:url('../images/black/center_hassub.png');
+}
+.menu ul li:hover ul {
+	display:block;
+	position:absolute;
+	top:42px;
+	left:0;
+	width:152px;
+	margin: 0;
+	padding: 0;
+}
+.menu ul li:hover ul li a.center_hassub {
+	background:#6a3;
+	color:#000;
+}
+.menu ul li:hover ul li:hover a.center_hassub {
+	background:#6fc;
+	color:#000;
+}
+.menu ul li:hover ul li ul {
+	display: none;
+}
+.menu ul li:hover .left_nosub {
+	color:#000;
+	background:url('../images/black/left_nosub.png');
+}
+.menu ul li:hover .right_hassub {
+	color:#000;
+	background:url('../images/black/right_hassub.png');
+}
+.menu ul li:hover .right_nosub {
+	color:#000;
+	background:url('../images/black/right_nosub.png');
+}
+/* DropDown Styling */
+.menu ul li:hover ul li a {
+	background-image: none;
+	display:block;
+	height: 28px;
+	line-height: 26px;
+	color:#000;
+	width:142px;
+	text-align:left;
+	margin: 0;
+	padding:0 0 0 11px;
+	font-weight:normal;
+}
+.menu ul li:hover ul {
+	margin: 0 0 0 3px;
+	padding: 0;
+	background-image:url('../images/black/dropdown.png');
+	background-repeat:no-repeat;
+	background-position:bottom left;
+}
+/* DropDown Menus ":active" or "Selected" Styling */
+.menu ul li:hover ul .sub_active {
+	background-image:url('../images/black/sub_active.png');
+	margin-right: 1px;
+}
+/* DropDown Menus ":hover" Styling */
+.menu ul li:hover ul li a:hover {
+	color:#000 !important;
+	background-image:url('../images/black/sub_hover.png');
+}
+.menu ul li:hover ul li:hover ul {
+	display:block;
+	position:absolute;
+	left:105px;
+	top:0;
+}
+.menu ul li:hover ul li:hover ul.left {
+	left:-105px;
+}
+.wrap {
+	position:relative;
+	top:20px;
+	left:20px;
+	float:left;
+	width:500px;
+	height:210px;
+	background:#101010 url('../images/presentation/black-licorice.png') no-repeat center 120px;
+	border:3px solid #f0f0f0;
+	padding:0;
+	padding-left:10px;
+}
+
+/* -- End Black Menu -- */

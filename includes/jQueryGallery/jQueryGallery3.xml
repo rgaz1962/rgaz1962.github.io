@@ -1,0 +1,10 @@
+<albums gallery="jQueryGallery3" imagesFolder="includes/jQueryGallery/images/jQueryGallery3/">
+  <album name="Album 1" folder="album1" description="" thumbnail="albums/portrait-001.jpg">
+    <image src="portrait-001.jpg" title="Title 1" description="This is just an example text to serve as a placeholder for the subcaption area. Please replace it with your own text" alt="" url="" target="_self" thumbnail="thumb/portrait-001.jpg" tooltip="tooltip/portrait-001.jpg" fullscreen="fullscreen/portrait-001.jpg"/>
+    <image src="portrait-002.jpg" title="Title 2" description="This is just an example text to serve as a placeholder for the subcaption area. Please replace it with your own text" alt="" url="" target="_self" thumbnail="thumb/portrait-002.jpg" tooltip="tooltip/portrait-002.jpg" fullscreen="fullscreen/portrait-002.jpg"/>
+    <image src="portrait-003.jpg" title="Title 3" description="This is just an example text to serve as a placeholder for the subcaption area. Please replace it with your own text" alt="" url="" target="_self" thumbnail="thumb/portrait-003.jpg" tooltip="tooltip/portrait-003.jpg" fullscreen="fullscreen/portrait-003.jpg"/>
+    <image src="portrait-004.jpg" title="Title 4" description="This is just an example text to serve as a placeholder for the subcaption area. Please replace it with your own text" alt="" url="" target="_self" thumbnail="thumb/portrait-004.jpg" tooltip="tooltip/portrait-004.jpg" fullscreen="fullscreen/portrait-004.jpg"/>
+    <image src="portrait-005.jpg" title="Title 5" description="This is just an example text to serve as a placeholder for the subcaption area. Please replace it with your own text" alt="" url="" target="_self" thumbnail="thumb/portrait-005.jpg" tooltip="tooltip/portrait-005.jpg" fullscreen="fullscreen/portrait-005.jpg"/>
+    <image src="portrait-006.jpg" title="Title 6" description="This is just an example text to serve as a placeholder for the subcaption area. Please replace it with your own text" alt="" url="" target="_self" thumbnail="thumb/portrait-006.jpg" tooltip="tooltip/portrait-006.jpg" fullscreen="fullscreen/portrait-006.jpg"/>
+  </album>
+</albums>

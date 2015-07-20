@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>drop shadows</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: #ccc;
+}
+body {
+	width: 700px;
+	background: #fff;
+	margin: 2em auto 2em;
+	font: 100% Arial, Helvetica, sans-serif;
+	padding: 25px;
+}
+a {
+	text-decoration: none;
+	color: rgb(158,79,25);
+}
+a:hover {
+	color: rgb(199,113,25);
+}
+.clear {
+	clear: both;
+}
+pre {
+	font-size: 1.2em;
+	padding: 1em .5em;
+	background: rgb(216,233,204);
+	border-bottom: 2px solid #666;
+}
+section h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.8em;
+	margin-bottom: .5em;
+	font-weight: normal;
+	font-variant: small-caps;
+	letter-spacing: .1em;
+	color: #aaa;
+}
+div {
+	width: 150px;
+	height: 150px;
+	padding: 10px;
+	font-weight: bold;
+}
+section {
+	width: 500px;
+	height: 250px;
+	background: url(_images/sm_skyline.jpg) no-repeat;
+	border: 2px solid black;
+	position: relative;
+	left: 50px;
+}
+.opacity {
+	background: rgb(131,151,111);
+	border: 4px solid black;
+	position: absolute;
+	left: -50px;
+	top: 50px;
+	filter: alpha(opacity=50);
+	opacity: .5;
+}
+.alpha {
+	background: rgba(153,123,161, .5);
+	border: 4px solid rgba(108,58,87, .8);
+	position: absolute;
+	right: -50px;
+	top: 50px;
+}
+</style>
+</head>
+<body>
+<h1>Opacity</h1>
+<p>There are several ways to control the transparency of elements in CSS. The first is to use the <strong>opacity</strong> property, which allows you to set values between 0 (transparent) and 1 (opaque) on elements. This setting applies to the entire element, including the element's content. Using the <strong>rgba</strong> and <strong>hsla</strong> color definitions, you can add an alpha value (again, between 0 and 1) to control that color application's opacity. Using this method you can specify unique opacity values for any property that accepts color definitions.</p>
+<section>
+<div class="opacity">
+<p>Opacity</p>
+</div>
+<div class="alpha">
+<p>Alpha transparency</p>
+</div>
+<div class="background">
+</div>
+</section>
+</body>
+</html>

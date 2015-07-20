@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>column height</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+html, body, section, p {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: rgb(221,203,181);
+}
+body {
+	width: 960px;
+	background: #fff;
+	margin: 0 auto 2em;
+	font: 100% Georgia, "Times New Roman", Times, serif;
+}
+section {
+	background: rgb(131,151,111);
+	width: 50%;
+}
+</style>
+</head>
+<body>
+<section>
+<p>I am content inside of a section. I want this section (which has a green background) to stretch to the full height of the layout. I could set height to 100%, but that by itself doesn't have the desired result. To make the element truly stretch to the full height, I have to also explicitly set the height of all its parent elements as well.</p>
+</section>
+</body>
+</html>
